@@ -1,0 +1,141 @@
+@media (max-width: 768px) {
+html, body {
+overflow-x: hidden !important;
+}
+
+section,
+main,
+.container {
+width: 100% !important;
+max-width: 100% !important;
+box-sizing: border-box !important;
+}
+
+h1 {
+font-size: 42px !important;
+line-height: 1.05 !important;
+}
+
+h2 {
+font-size: 30px !important;
+line-height: 1.15 !important;
+}
+
+p {
+font-size: 16px !important;
+line-height: 1.55 !important;
+}
+
+/* cartes services */
+.services-grid,
+.grid,
+.cards-grid {
+display: grid !important;
+grid-template-columns: 1fr !important;
+gap: 16px !important;
+width: 100% !important;
+max-width: 100% !important;
+}
+
+.service-card,
+.card {
+width: 100% !important;
+max-width: 100% !important;
+min-width: 0 !important;
+margin: 0 !important;
+box-sizing: border-box !important;
+}
+
+/* sections en flex */
+.services-row,
+.services-content,
+.split-section,
+.two-columns {
+display: flex !important;
+flex-direction: column !important;
+gap: 16px !important;
+}
+
+/* boutons */
+.btn,
+.button,
+a.btn,
+a.button,
+button {
+width: 100% !important;
+text-align: center !important;
+box-sizing: border-box !important;
+}
+
+img {
+max-width: 100% !important;
+height: auto !important;
+display: block !important;
+}
+}
+@media (max-width: 768px) {
+.timeline-section,
+.process-section,
+.steps-section {
+overflow-x: hidden !important;
+}
+
+.timeline-wrapper,
+.timeline,
+.process-timeline {
+width: 100% !important;
+max-width: 100% !important;
+}
+
+.timeline-item,
+.process-step,
+.step-row {
+display: grid !important;
+grid-template-columns: 44px 1fr !important;
+gap: 14px !important;
+align-items: start !important;
+width: 100% !important;
+}
+
+.timeline-left,
+.step-left,
+.timeline-marker {
+width: 44px !important;
+min-width: 44px !important;
+display: flex !important;
+justify-content: center !important;
+}
+
+.timeline-left::before,
+.step-left::before,
+.timeline-marker::before {
+left: 50% !important;
+transform: translateX(-50%) !important;
+}
+
+.timeline-card,
+.step-card,
+.process-card {
+width: 100% !important;
+max-width: 100% !important;
+min-width: 0 !important;
+padding: 20px !important;
+box-sizing: border-box !important;
+overflow: hidden !important;
+}
+
+.timeline-card h3,
+.step-card h3,
+.process-card h3 {
+font-size: 18px !important;
+line-height: 1.25 !important;
+}
+
+.timeline-card p,
+.step-card p,
+.process-card p {
+font-size: 15px !important;
+line-height: 1.55 !important;
+word-break: break-word !important;
+}
+}
