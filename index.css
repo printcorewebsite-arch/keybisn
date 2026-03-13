@@ -1,0 +1,65 @@
+@media (max-width: 768px) {
+html, body {
+overflow-x: hidden !important;
+width: 100% !important;
+max-width: 100% !important;
+margin: 0 !important;
+padding: 0 !important;
+}
+
+body {
+transform: none !important;
+}
+
+
+/* Gros conteneurs */
+main,
+section,
+section > div,
+div[style*="max-width:1100px"] {
+max-width: 100% !important;
+width: 100% !important;
+box-sizing: border-box !important;
+}
+
+/* Sections desktop en 2 colonnes -> mobile en colonne */
+div[style*="display:flex"][style*="justify-content:space-between"],
+div[style*="display:flex"][style*="align-items:center"] {
+flex-direction: column !important;
+align-items: flex-start !important;
+gap: 20px !important;
+}
+
+/* Colonnes internes */
+div[style*="flex:1"] {
+width: 100% !important;
+min-width: 0 !important;
+}
+
+/* Titre accueil */
+h1 {
+font-size: 52px !important;
+line-height: 0.98 !important;
+letter-spacing: -1px !important;
+}
+
+p {
+font-size: 16px !important;
+line-height: 1.55 !important;
+}
+
+/* Boutons */
+a[style*="padding"],
+button {
+max-width: 100% !important;
+box-sizing: border-box !important;
+}
+
+/* Images et cartes */
+img {
+max-width: 100% !important;
+height: auto !important;
+display: block !important;
+}
+}
+
