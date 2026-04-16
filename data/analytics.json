@@ -1262,5 +1262,167 @@
       "type": "simulateur",
       "email": "test@test.com"
     }
+  },
+  {
+    "id": "trk_1776371484391_icuen1",
+    "ts": "2026-04-16T20:31:24.391Z",
+    "event": "acq_page_view",
+    "page": "/simulateur-couts",
+    "source": "direct",
+    "userId": null,
+    "payload": {
+      "pageType": "simulateur_couts",
+      "context": {
+        "firstPath": "/simulateur-couts",
+        "lastPath": "/simulateur-couts",
+        "firstReferrer": "",
+        "lastReferrer": "",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776371490886_mw2if9",
+    "ts": "2026-04-16T20:31:30.886Z",
+    "event": "acq_nav_click",
+    "page": "/simulateur-couts",
+    "source": "direct",
+    "userId": null,
+    "payload": {
+      "nav": "mobile_simulateur",
+      "pageType": "simulateur_couts",
+      "context": {
+        "firstPath": "/simulateur-couts",
+        "lastPath": "/simulateur-couts",
+        "firstReferrer": "",
+        "lastReferrer": "",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776371490944_xtzbx5",
+    "ts": "2026-04-16T20:31:30.944Z",
+    "event": "acq_page_view",
+    "page": "/simulateur-couts",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "simulateur_couts",
+      "context": {
+        "firstPath": "/simulateur-couts",
+        "lastPath": "/simulateur-couts",
+        "firstReferrer": "http://localhost:3000/simulateur-couts",
+        "lastReferrer": "http://localhost:3000/simulateur-couts",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776371545119_lb9eok",
+    "ts": "2026-04-16T20:32:25.120Z",
+    "event": "acq_nav_click",
+    "page": "/simulateur-couts",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "mobile_quiz",
+      "pageType": "simulateur_couts",
+      "context": {
+        "firstPath": "/simulateur-couts",
+        "lastPath": "/simulateur-couts",
+        "firstReferrer": "http://localhost:3000/simulateur-couts",
+        "lastReferrer": "http://localhost:3000/simulateur-couts",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776371545164_hbv9cj",
+    "ts": "2026-04-16T20:32:25.164Z",
+    "event": "acq_page_view",
+    "page": "/quiz-statut-juridique",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "quiz_statut",
+      "context": {
+        "firstPath": "/simulateur-couts",
+        "lastPath": "/quiz-statut-juridique",
+        "firstReferrer": "http://localhost:3000/simulateur-couts",
+        "lastReferrer": "http://localhost:3000/simulateur-couts",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776371572517_9l6rwv",
+    "ts": "2026-04-16T20:32:52.517Z",
+    "event": "tool_lead_captured",
+    "page": "/quiz-statut-juridique",
+    "source": "http://localhost:3000/simulateur-couts",
+    "userId": null,
+    "payload": {
+      "captureId": "cap_1776371572456_jexf4g",
+      "type": "quiz_statut",
+      "email": "amarmal12ui@gmail.com"
+    }
+  },
+  {
+    "id": "trk_1776371582691_a5ectg",
+    "ts": "2026-04-16T20:33:02.691Z",
+    "event": "acq_nav_click",
+    "page": "/quiz-statut-juridique",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "mobile_docs",
+      "pageType": "quiz_statut",
+      "context": {
+        "firstPath": "/simulateur-couts",
+        "lastPath": "/quiz-statut-juridique",
+        "firstReferrer": "http://localhost:3000/simulateur-couts",
+        "lastReferrer": "http://localhost:3000/simulateur-couts",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776371582729_w2pi1u",
+    "ts": "2026-04-16T20:33:02.729Z",
+    "event": "acq_page_view",
+    "page": "/documents-gratuits",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "documents_gratuits",
+      "context": {
+        "firstPath": "/simulateur-couts",
+        "lastPath": "/documents-gratuits",
+        "firstReferrer": "http://localhost:3000/simulateur-couts",
+        "lastReferrer": "http://localhost:3000/quiz-statut-juridique",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776371590485_rtjmme",
+    "ts": "2026-04-16T20:33:10.485Z",
+    "event": "tool_lead_captured",
+    "page": "/documents-gratuits",
+    "source": "http://localhost:3000/quiz-statut-juridique",
+    "userId": null,
+    "payload": {
+      "captureId": "cap_1776371590484_1s6wct",
+      "type": "document_download",
+      "email": "amarmal12ui@gmail.com"
+    }
   }
 ]
