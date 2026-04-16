@@ -1,0 +1,8 @@
+node_modules/
+.env
+*.log
+
+# Runtime files
+data/*.tmp
+storage/uploads/*
+!storage/uploads/.gitkeep

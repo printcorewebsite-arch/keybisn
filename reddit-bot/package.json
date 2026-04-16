@@ -1,0 +1,26 @@
+{
+  "name": "keybis-reddit-engine",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Systeme semi-automatise de content marketing Reddit pour Keybis",
+  "scripts": {
+    "start": "node src/index.js",
+    "scrape": "node src/scraper.js",
+    "generate": "node src/content-generator.js --preview",
+    "publish": "node src/publisher.js",
+    "schedule": "node src/scheduler.js",
+    "analyze": "node src/analyzer.js",
+    "telegram": "node src/index.js telegram",
+    "daily": "node src/daily-cron.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "snoowrap": "^1.23.0",
+    "node-cron": "^3.0.3",
+    "better-sqlite3": "^11.0.0",
+    "dotenv": "^16.4.0",
+    "openai": "^4.50.0"
+  }
+}

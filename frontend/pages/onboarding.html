@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Onboarding Keybis guidé étape par étape pour constituer un dossier juridique clair et conforme." />
+  <title>Keybis | Onboarding dossier</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/app.css" />
+  <script type="module" src="/assets/js/onboarding.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/" aria-label="Accueil">
+        <img src="/assets/images/logo-keybis.png" alt="Logo Keybis" />
+        <div>
+          <strong>KEYBIS</strong>
+          <span>Onboarding intelligent</span>
+        </div>
+      </a>
+
+      <nav class="connected-nav" aria-label="Navigation espace client">
+        <a class="active" href="/onboarding">Onboarding</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="/checkout">Paiement</a>
+      </nav>
+
+      <button id="connected-logout" class="btn btn-ghost" type="button">Se déconnecter</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container layout">
+      <aside class="panel">
+        <div class="panel-title-row">
+          <h2 class="sidebar-title">Progression</h2>
+          <span id="onboarding-progress-percent" class="badge">25%</span>
+        </div>
+
+        <div class="progress-wrap">
+          <div class="progress-track">
+            <div id="onboarding-progress-fill" class="progress-fill"></div>
+          </div>
+        </div>
+        <p id="onboarding-progress-text" class="helper">Étape 1 sur 4</p>
+
+        <div class="step-pill active" data-step-pill="1">1. Type de société</div>
+        <div class="step-pill" data-step-pill="2">2. Activité</div>
+        <div class="step-pill" data-step-pill="3">3. Associés</div>
+        <div class="step-pill" data-step-pill="4">4. Options</div>
+
+        <hr style="border:none; border-top:1px solid var(--line); margin:12px 0;" />
+
+        <div class="panel-title-row" style="margin-bottom:8px;">
+          <h3 class="sidebar-title" style="margin:0;">Résumé en temps réel</h3>
+          <span class="tooltip-chip">Guidé et sans jargon</span>
+        </div>
+        <div class="summary-grid">
+          <div class="summary-item">
+            <strong>Type de société</strong>
+            <span id="summary-company">Non défini</span>
+          </div>
+          <div class="summary-item">
+            <strong>Activité</strong>
+            <span id="summary-activity">Non définie</span>
+          </div>
+          <div class="summary-item">
+            <strong>Associés</strong>
+            <span id="summary-associates">Non défini</span>
+          </div>
+          <div class="summary-item">
+            <strong>Options</strong>
+            <span id="summary-options">Aucune</span>
+          </div>
+        </div>
+
+        <hr style="border:none; border-top:1px solid var(--line); margin:12px 0;" />
+
+        <p class="helper">Montant estimatif</p>
+        <p id="onboarding-amount" style="margin:0; font-weight:800; font-size:1.4rem;">399,00 €</p>
+
+        <div class="security-row">
+          <div class="security-badge">Données chiffrées et hébergées en UE</div>
+          <div class="security-badge">Dossier vérifié par un expert Keybis</div>
+        </div>
+      </aside>
+
+      <section class="panel">
+        <div class="section-title" style="text-align:left; margin-bottom:16px;">
+          <span class="badge">Questionnaire guidé</span>
+          <h1 style="margin:10px 0 0;">Construisons votre dossier</h1>
+          <p>Chaque étape contient des exemples concrets pour vous aider à répondre rapidement et correctement.</p>
+        </div>
+
+        <div id="onboarding-notice" class="notice hidden"></div>
+
+        <section class="step-view" data-step="1">
+          <h3>Quel type de société souhaitez-vous créer ?</h3>
+          <p class="helper">Nous adaptons les documents et formalités à cette sélection. Choisissez la structure correspondant à votre projet.</p>
+          <div class="hint"><strong>Exemple :</strong> pour une activité solo avec peu de charges, la micro-entreprise est souvent la plus simple au démarrage.</div>
+          <details class="context-help">
+            <summary>Comment choisir rapidement ?</summary>
+            <p>Si vous êtes seul et souhaitez aller vite, commencez en micro-entreprise. Si vous voulez une structure évolutive avec image plus premium, la SASU est souvent plus adaptée.</p>
+          </details>
+          <div class="grid-3" style="margin-top:10px;">
+            <label class="list-item"><span><input type="radio" name="companyType" value="micro" /> Micro-entreprise</span></label>
+            <label class="list-item"><span><input type="radio" name="companyType" value="sasu" /> SASU</span></label>
+            <label class="list-item"><span><input type="radio" name="companyType" value="sas" /> SAS</span></label>
+            <label class="list-item"><span><input type="radio" name="companyType" value="eurl" /> EURL</span></label>
+            <label class="list-item"><span><input type="radio" name="companyType" value="sarl" /> SARL</span></label>
+          </div>
+        </section>
+
+        <section class="step-view hidden" data-step="2">
+          <h3>Décrivez votre activité</h3>
+          <p class="helper">Cette information sert à sécuriser la conformité du dossier et des statuts.</p>
+          <div class="hint"><strong>Exemple :</strong> "Conseil en stratégie digitale pour TPE", plutôt que "consulting".</div>
+          <details class="context-help">
+            <summary>Pourquoi ce champ est important ?</summary>
+            <p>Une activité trop vague peut ralentir la validation. Plus votre description est concrète, plus la génération de documents est fiable.</p>
+          </details>
+          <div class="field" style="margin-top:10px;">
+            <label for="activity">Activité principale</label>
+            <input id="activity" type="text" placeholder="Ex: Conseil en marketing digital" />
+          </div>
+          <div class="field">
+            <label for="activityDetails">Précisions (optionnel)</label>
+            <textarea id="activityDetails" placeholder="Canal de vente, cible, localisation, etc."></textarea>
+          </div>
+        </section>
+
+        <section class="step-view hidden" data-step="3">
+          <h3>Structure des associés</h3>
+          <p class="helper">Le nombre d'associés impacte la rédaction des documents et la gouvernance juridique.</p>
+          <p id="associatesHint" class="helper hidden">Pour la micro-entreprise, cette étape est automatiquement simplifiée.</p>
+          <details class="context-help">
+            <summary>Cas fréquent</summary>
+            <p>Si vous créez seul une SASU ou EURL, sélectionnez 1 associé (vous-même). Vous pourrez faire évoluer la répartition plus tard.</p>
+          </details>
+          <div id="associatesSection">
+            <div class="field">
+              <label for="associatesCount">Nombre d'associés</label>
+              <select id="associatesCount">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div id="associatesNamesWrap"></div>
+          </div>
+        </section>
+
+        <section class="step-view hidden" data-step="4">
+          <h3>Options complémentaires</h3>
+          <p class="helper">Ces options accélèrent ou renforcent votre accompagnement selon votre niveau d'urgence.</p>
+          <details class="context-help">
+            <summary>Quelles options choisir ?</summary>
+            <p>Choisissez le support prioritaire si vous avez une échéance proche. La domiciliation est utile si vous n'avez pas encore d'adresse professionnelle stable.</p>
+          </details>
+          <div class="list">
+            <label class="list-item wrap">
+              <span><input id="option-domiciliation" type="checkbox" /> Domiciliation</span>
+              <span class="small-muted">Adresse professionnelle incluse dans le dossier</span>
+              <span class="small-muted">+49 €</span>
+            </label>
+            <label class="list-item wrap">
+              <span><input id="option-accounting" type="checkbox" /> Pack comptable démarrage</span>
+              <span class="small-muted">Mise en place des bases comptables</span>
+              <span class="small-muted">+99 €</span>
+            </label>
+            <label class="list-item wrap">
+              <span><input id="option-prioritySupport" type="checkbox" /> Support prioritaire</span>
+              <span class="small-muted">Traitement accéléré et réponses renforcées</span>
+              <span class="small-muted">+69 €</span>
+            </label>
+            <label class="list-item wrap">
+              <span><input id="option-trademark" type="checkbox" /> Dépôt de marque (pré-audit)</span>
+              <span class="small-muted">Audit initial avant dépôt officiel</span>
+              <span class="small-muted">+129 €</span>
+            </label>
+          </div>
+          <div class="hint" style="margin-top:10px;"><strong>Rassurance :</strong> avant tout dépôt, un expert relit votre dossier pour limiter les rejets administratifs.</div>
+        </section>
+
+        <div style="display:flex; gap:10px; margin-top:18px;">
+          <button id="btn-prev" class="btn btn-ghost hidden" type="button">Retour</button>
+          <button id="btn-next" class="btn btn-primary" type="button">Continuer</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Keybis</div>
+      <div class="footer-links">
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/cgv">CGV</a>
+        <a href="/confidentialite">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

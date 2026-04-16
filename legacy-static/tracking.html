@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Vue locale des événements de conversion Keybis (CTA, formulaire, source UTM)." />
+  <title>Keybis | Tracking local conversion</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html" aria-label="Accueil Keybis">
+        <img src="assets/images/logo-keybis.png" alt="Logo Keybis" />
+        <div class="brand-text">
+          <strong>KEYBIS</strong>
+          <span>Tracking conversion</span>
+        </div>
+      </a>
+      <a class="btn btn-primary header-cta" href="demarrer.html" data-track="tracking_header_cta">Démarrer ma création maintenant</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container legal-content">
+      <h1>Tracking local des conversions</h1>
+      <p>Cette page affiche les événements enregistrés dans le navigateur: clics CTA, ouverture WhatsApp, soumissions de formulaire, source UTM.</p>
+      <div id="tracking-root"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span data-current-year></span> Keybis • 07 80 95 40 94</div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="demarrer.html">Démarrer ma création maintenant</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

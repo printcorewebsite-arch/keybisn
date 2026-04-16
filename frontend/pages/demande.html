@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demande de formalité entreprise | Réponse rapide WhatsApp | Keybis</title>
+  <meta name="description" content="Formulaire ultra simple: renseignez votre besoin et envoyez votre demande sur WhatsApp en 2 minutes. Réponse expert en moins de 10 minutes." />
+  <meta name="keywords" content="formulaire création société, formalités entreprise, demande modification société, fermeture société whatsapp" />
+  {{include:../partials/seo-meta.html}}
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/acquisition.css" />
+  <script type="module" src="/assets/js/acquisition.js" defer></script>
+  <script type="module" src="/assets/js/demande.js" defer></script>
+</head>
+<body class="acq-body" data-page-type="lead_form">
+  {{include:../partials/marketing-header.html}}
+
+  <main class="acq-main" id="main-content">
+    <div class="acq-container">
+      <section class="acq-hero">
+        <article class="acq-card">
+          <span class="acq-kicker">Votre demande</span>
+          <h1>Dites-nous votre besoin, on vous répond vite.</h1>
+          <p id="need-helper" class="acq-muted">Formulaire court, réponse rapide, puis envoi direct sur WhatsApp.</p>
+
+          <div class="acq-steps">
+            <div class="acq-step active" data-step="1">1. Formulaire</div>
+            <div class="acq-step" data-step="2">2. Résumé</div>
+            <div class="acq-step" data-step="3">3. WhatsApp</div>
+          </div>
+          <div class="acq-progress-track"><div id="lead-progress-fill" class="acq-progress-fill"></div></div>
+          <p id="lead-progress-text" class="acq-microcopy">Étape 1/3 - Formulaire</p>
+
+          <div class="acq-reassurance-inline">
+            <span>Réponse en 10 min</span>
+            <span>Demande sans engagement</span>
+            <span>Données confidentielles</span>
+          </div>
+
+          <div id="lead-notice" class="acq-notice acq-hidden"></div>
+
+          <div id="form-step">
+            <!-- Bannière offre présélectionnée (masquée si pas de pack dans l'URL) -->
+            <div id="pack-banner" class="acq-pack-banner acq-hidden">
+              <div class="acq-pack-banner-inner">
+                <span class="acq-pack-banner-pre">Offre sélectionnée</span>
+                <strong id="pack-banner-label" class="acq-pack-banner-label">-</strong>
+                <span id="pack-banner-priority" class="acq-pack-priority acq-hidden">Traitement prioritaire</span>
+              </div>
+            </div>
+
+            <form id="lead-form" class="acq-form">
+              <div class="acq-field">
+                <label for="lead-full-name">Nom et prénom *</label>
+                <input id="lead-full-name" type="text" autocomplete="name" required />
+              </div>
+              <div class="acq-grid-2">
+                <div class="acq-field">
+                  <label for="lead-phone">Téléphone *</label>
+                  <input id="lead-phone" type="tel" autocomplete="tel" required />
+                </div>
+                <div class="acq-field">
+                  <label for="lead-email">Email *</label>
+                  <input id="lead-email" type="email" autocomplete="email" required />
+                </div>
+              </div>
+
+              <div class="acq-grid-2">
+                <div class="acq-field">
+                  <label for="lead-need-type">Type de besoin *</label>
+                  <select id="lead-need-type" required>
+                    <option value="creation">Création de société</option>
+                    <option value="modification">Modification de société</option>
+                    <option value="fermeture">Fermeture de société</option>
+                  </select>
+                </div>
+                <div class="acq-field">
+                  <label for="lead-urgency">Urgence</label>
+                  <select id="lead-urgency">
+                    <option value="normal">Normal</option>
+                    <option value="48h">Sous 48h</option>
+                    <option value="24h">Urgent (24h)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="acq-field">
+                <label for="lead-activity">Activité / type de formalité</label>
+                <input id="lead-activity" type="text" />
+              </div>
+              <div class="acq-field">
+                <label for="lead-legal-status">Statut ou forme actuelle (optionnel)</label>
+                <input id="lead-legal-status" type="text" placeholder="Ex: SASU, SARL, micro-entreprise..." />
+              </div>
+              <div class="acq-field">
+                <label for="lead-details">Infos complémentaires (optionnel)</label>
+                <textarea id="lead-details" placeholder="Ajoutez ici les détails utiles"></textarea>
+              </div>
+
+              <div class="acq-cta-stack">
+                <button class="acq-btn acq-btn-primary" type="submit">Voir mon résumé</button>
+                <p class="acq-microcopy">Réponse en 10 min • Aucun paiement ici</p>
+              </div>
+            </form>
+          </div>
+        </article>
+
+        <aside class="acq-card acq-hidden" id="summary-step">
+          <span class="acq-kicker">Étape 2/3</span>
+          <h2>Votre demande est prête à envoyer.</h2>
+          <p class="acq-muted">Vérifiez les infos ci-dessous puis envoyez sur WhatsApp en 1 clic.</p>
+
+          <div class="acq-summary-grid">
+            <div class="acq-summary-item"><strong>Service</strong><span id="sum-need">-</span></div>
+            <div class="acq-summary-item acq-hidden" id="sum-pack-row"><strong>Offre</strong><span id="sum-pack">-</span></div>
+            <div class="acq-summary-item"><strong>Nom</strong><span id="sum-name">-</span></div>
+            <div class="acq-summary-item"><strong>Téléphone</strong><span id="sum-phone">-</span></div>
+            <div class="acq-summary-item"><strong>Email</strong><span id="sum-email">-</span></div>
+            <div class="acq-summary-item"><strong>Infos spécifiques</strong><span id="sum-activity">-</span></div>
+            <div class="acq-summary-item"><strong>Statut / Forme</strong><span id="sum-status">-</span></div>
+            <div class="acq-summary-item"><strong>Urgence</strong><span id="sum-urgency">-</span></div>
+          </div>
+
+          <div class="acq-reassurance-inline">
+            <span>Message WhatsApp pré-rempli</span>
+            <span>Réponse expert en 10 min</span>
+          </div>
+
+          <div class="acq-actions">
+            <div class="acq-cta-stack">
+              <button id="whatsapp-btn" class="acq-btn acq-btn-primary" type="button">Envoyer ma demande sur WhatsApp</button>
+              <p class="acq-microcopy">On vous rappelle rapidement après envoi</p>
+            </div>
+            <button id="edit-btn" class="acq-btn acq-btn-ghost" type="button">Modifier mes infos</button>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  <div class="acq-mobile-sticky-wrap">
+    <a class="acq-btn acq-btn-primary" href="#lead-form">Finaliser ma demande</a>
+    <div class="acq-mobile-note">Réponse en 10 min • Sans engagement</div>
+  </div>
+
+  {{include:../partials/marketing-footer.html}}
+</body>
+</html>

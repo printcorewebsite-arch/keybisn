@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dashboard client Keybis: timeline dossier, notifications, documents, paiement et support." />
+  <title>Keybis | Dashboard client</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/app.css" />
+  <script type="module" src="/assets/js/dashboard.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/" aria-label="Accueil">
+        <img src="/assets/images/logo-keybis.png" alt="Logo Keybis" />
+        <div>
+          <strong>KEYBIS</strong>
+          <span>Espace client</span>
+        </div>
+      </a>
+
+      <nav class="connected-nav" aria-label="Navigation espace client">
+        <a href="/onboarding">Onboarding</a>
+        <a class="active" href="/dashboard">Dashboard</a>
+        <a href="/checkout">Paiement</a>
+      </nav>
+
+      <button id="logout-btn" class="btn btn-ghost" type="button">Se déconnecter</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-title" style="text-align:left; margin-bottom:16px;">
+        <span class="badge">Pilotage dossier</span>
+        <h1 style="margin:10px 0 0;">Bonjour <span id="dashboard-user-name">...</span></h1>
+        <p>Votre dossier est suivi en temps réel. Chaque étape est tracée, vérifiée et sécurisée.</p>
+      </div>
+
+      <div id="dashboard-notice" class="notice hidden"></div>
+
+      <div class="kpis">
+        <article class="kpi-card">
+          <div class="small-muted">Statut dossier</div>
+          <div style="margin-top:8px;"><span id="status-pill" class="status-pill status-draft">Brouillon</span></div>
+          <div class="legal-note">Statut mis à jour automatiquement selon vos actions et la vérification expert.</div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="small-muted">Progression</div>
+          <div class="progress-wrap">
+            <div class="progress-track"><div id="dashboard-progress-fill" class="progress-fill"></div></div>
+          </div>
+          <strong id="dashboard-progress-value">0%</strong>
+          <div class="legal-note">Objectif: dossier complet, conforme, prêt au dépôt.</div>
+        </article>
+
+        <article class="kpi-card">
+          <div class="small-muted">Montant formalité</div>
+          <div id="dashboard-amount" class="kpi-value">0,00 €</div>
+          <button id="pay-btn" class="btn btn-primary btn-block" type="button">Finaliser le paiement</button>
+          <div class="legal-note">Paiement sécurisé. Traitement lancé après confirmation.</div>
+        </article>
+      </div>
+
+      <div class="panel" style="margin-top:14px;">
+        <div class="panel-title-row">
+          <h2 class="sidebar-title" style="margin:0;">Actions recommandées</h2>
+          <span class="tooltip-chip">Guidage intelligent</span>
+        </div>
+        <div id="action-list" class="list"></div>
+      </div>
+
+      <div class="layout" style="margin-top: 14px;">
+        <section class="panel">
+          <div class="panel-title-row">
+            <h2 class="sidebar-title" style="margin:0;">Notifications dossier</h2>
+            <span class="tooltip-chip">Priorisées</span>
+          </div>
+          <div id="notifications-list" class="notification-list"></div>
+
+          <div class="security-row">
+            <div class="security-badge">Vérifié par un expert Keybis avant dépôt</div>
+            <div class="security-badge">Journal de modifications horodaté</div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title-row">
+            <h2 class="sidebar-title" style="margin:0;">Timeline du dossier</h2>
+            <span class="tooltip-chip">Historique live</span>
+          </div>
+          <div id="timeline-list" class="timeline"></div>
+        </section>
+      </div>
+
+      <div class="layout" style="margin-top: 14px;">
+        <section id="documents" class="panel">
+          <div class="panel-title-row">
+            <h2 class="sidebar-title" style="margin:0;">Documents</h2>
+            <span class="tooltip-chip">Upload sécurisé</span>
+          </div>
+
+          <div id="docs-list" class="list"></div>
+
+          <form id="upload-form" style="margin-top:12px;">
+            <div id="upload" class="dropzone" tabindex="0" role="button" aria-label="Déposer un fichier">
+              <p style="margin:0 0 6px;"><strong>Glissez-déposez votre fichier ici</strong></p>
+              <p class="helper" style="margin:0;">ou cliquez pour sélectionner (PDF, image, document texte)</p>
+              <input id="file-input" type="file" />
+            </div>
+            <div style="display:flex; gap:8px; margin-top:10px;">
+              <button class="btn btn-secondary" type="submit">Uploader le document</button>
+              <button id="upload-reset-btn" class="btn btn-ghost" type="button">Réinitialiser</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title-row">
+            <h2 class="sidebar-title" style="margin:0;">Checklist</h2>
+            <a class="btn btn-ghost" href="/onboarding">Modifier onboarding</a>
+          </div>
+          <div id="checklist-list" class="list"></div>
+        </section>
+      </div>
+
+      <div class="layout" style="margin-top: 14px;">
+        <section class="panel">
+          <div class="panel-title-row">
+            <h2 class="sidebar-title" style="margin:0;">Messages support</h2>
+            <span class="tooltip-chip">Réponse rapide</span>
+          </div>
+          <div id="messages-box" class="chat-box"></div>
+          <form id="message-form" style="margin-top:10px;">
+            <div class="field">
+              <label for="message-input">Envoyer un message</label>
+              <textarea id="message-input" placeholder="Ex: J'ai ajouté mon justificatif de domiciliation, pouvez-vous vérifier ?"></textarea>
+            </div>
+            <button class="btn btn-secondary" type="submit">Envoyer</button>
+          </form>
+        </section>
+
+        <section class="panel">
+          <div class="panel-title-row">
+            <h2 class="sidebar-title" style="margin:0;">Historique récent</h2>
+            <a class="btn btn-ghost" href="/checkout">Voir paiement</a>
+          </div>
+          <div id="history-list" class="list"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Keybis</div>
+      <div class="footer-links">
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/cgv">CGV</a>
+        <a href="/confidentialite">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

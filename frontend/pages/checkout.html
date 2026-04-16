@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Paiement Keybis sécurisé avec résumé de commande et statut en temps réel." />
+  <title>Keybis | Paiement sécurisé</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/app.css" />
+  <script type="module" src="/assets/js/checkout.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/" aria-label="Accueil">
+        <img src="/assets/images/logo-keybis.png" alt="Logo Keybis" />
+        <div>
+          <strong>KEYBIS</strong>
+          <span>Paiement sécurisé</span>
+        </div>
+      </a>
+
+      <nav class="connected-nav" aria-label="Navigation espace client">
+        <a href="/onboarding">Onboarding</a>
+        <a href="/dashboard">Dashboard</a>
+        <a class="active" href="/checkout">Paiement</a>
+      </nav>
+
+      <button id="checkout-logout" class="btn btn-ghost" type="button">Se déconnecter</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-title" style="text-align:left; margin-bottom:16px;">
+        <span class="badge">Finalisation</span>
+        <h1 style="margin:10px 0 0;">Validez votre paiement</h1>
+        <p>Le traitement de votre dossier démarre immédiatement après confirmation du paiement.</p>
+      </div>
+
+      <div id="checkout-notice" class="notice hidden"></div>
+
+      <div class="payment-shell">
+        <section class="panel">
+          <div class="panel-title-row">
+            <h2 class="sidebar-title" style="margin:0;">Résumé de commande</h2>
+            <span id="payment-status-pill" class="status-pill status-pending">En attente</span>
+          </div>
+
+          <div class="subtle-card">
+            <div class="price-line">
+              <span>Type de société</span>
+              <strong id="checkout-company">-</strong>
+            </div>
+            <div class="price-line">
+              <span>Activité</span>
+              <strong id="checkout-activity">-</strong>
+            </div>
+            <div class="price-line">
+              <span>Associés</span>
+              <strong id="checkout-associates">-</strong>
+            </div>
+            <div class="price-line">
+              <span>Options</span>
+              <strong id="checkout-options">Aucune</strong>
+            </div>
+          </div>
+
+          <div class="subtle-card" style="margin-top:10px;">
+            <div class="price-line">
+              <span>Total à payer</span>
+              <strong id="checkout-total" style="font-size:1.2rem;">0,00 €</strong>
+            </div>
+            <div class="legal-note">Le total inclut les options sélectionnées dans votre onboarding.</div>
+          </div>
+
+          <div style="display:flex; gap:8px; margin-top:12px;">
+            <button id="checkout-pay-btn" class="btn btn-primary" type="button">Procéder au paiement</button>
+            <a class="btn btn-secondary" href="/dashboard">Retour dashboard</a>
+          </div>
+        </section>
+
+        <aside class="panel">
+          <h2 class="sidebar-title">Paiement rassurant</h2>
+          <div class="security-row">
+            <div class="security-badge">Paiement sécurisé (Stripe-ready)</div>
+            <div class="security-badge">Aucun traitement sans validation de paiement</div>
+            <div class="security-badge">Traçabilité complète dans votre dashboard</div>
+          </div>
+
+          <hr style="border:none; border-top:1px solid var(--line); margin:12px 0;" />
+
+          <h3 style="margin:0 0 8px; font-size:1rem;">Ce qu'il se passe après paiement</h3>
+          <div class="timeline">
+            <div class="timeline-item"><strong>1. Confirmation</strong><br /><small>Le statut passe en "en cours".</small></div>
+            <div class="timeline-item"><strong>2. Vérification expert</strong><br /><small>Votre dossier est revu pour conformité.</small></div>
+            <div class="timeline-item"><strong>3. Lancement traitement</strong><br /><small>Dépôt préparé selon votre checklist.</small></div>
+          </div>
+
+          <p class="legal-note">En cas d'annulation, vous pouvez reprendre votre paiement depuis cette page.</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Keybis</div>
+      <div class="footer-links">
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/cgv">CGV</a>
+        <a href="/confidentialite">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

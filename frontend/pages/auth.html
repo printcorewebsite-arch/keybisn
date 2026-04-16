@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Créez votre compte Keybis pour démarrer votre onboarding juridique et gérer votre dossier en ligne." />
+  <title>Keybis | Connexion / Inscription</title>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/app.css" />
+  <script type="module" src="/assets/js/auth.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/" aria-label="Retour accueil">
+        <img src="/assets/images/logo-keybis.png" alt="Logo Keybis" />
+        <div>
+          <strong>KEYBIS</strong>
+          <span>Plateforme LegalTech</span>
+        </div>
+      </a>
+      <a class="btn btn-secondary" href="/">Retour landing</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-title">
+        <span class="badge">Espace sécurisé</span>
+        <h1>Créez votre espace client Keybis</h1>
+        <p>Un compte = un dossier structuré, un suivi en temps réel, des échanges centralisés.</p>
+      </div>
+
+      <div class="form-shell">
+        <div style="display:flex; gap:8px; margin-bottom:14px;">
+          <button class="btn btn-primary" type="button" data-switch="login">Connexion</button>
+          <button class="btn btn-ghost" type="button" data-switch="register">Créer un compte</button>
+        </div>
+
+        <div id="auth-notice" class="notice hidden"></div>
+
+        <section data-auth="login">
+          <form id="login-form">
+            <div class="field">
+              <label for="login-email">Email</label>
+              <input id="login-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="login-password">Mot de passe</label>
+              <input id="login-password" name="password" type="password" autocomplete="current-password" required />
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Se connecter</button>
+          </form>
+        </section>
+
+        <section class="hidden" data-auth="register">
+          <form id="register-form">
+            <div class="field">
+              <label for="register-name">Nom complet</label>
+              <input id="register-name" name="fullName" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="register-email">Email</label>
+              <input id="register-email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="register-password">Mot de passe</label>
+              <input id="register-password" name="password" type="password" minlength="8" required />
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Créer mon compte</button>
+            <p class="helper">Minimum 8 caractères. Votre compte vous donne accès au dashboard et au suivi dossier.</p>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div>© <span id="year"></span> Keybis</div>
+      <div class="footer-links">
+        <a href="/mentions-legales">Mentions légales</a>
+        <a href="/cgv">CGV</a>
+        <a href="/confidentialite">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>

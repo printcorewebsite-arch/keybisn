@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Démarrez votre formalité Keybis en 1 minute: 3 champs puis redirection WhatsApp personnalisée." />
+  <title>Keybis | Démarrer ma création maintenant</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row focus-header-row">
+      <a class="brand" href="index.html" aria-label="Retour à l'accueil Keybis">
+        <img src="assets/images/logo-keybis.png" alt="Logo Keybis" />
+        <div class="brand-text">
+          <strong>KEYBIS</strong>
+          <span>Formalités simplifiées</span>
+        </div>
+      </a>
+
+      <a class="btn btn-primary header-cta" href="demarrer.html" data-track="header_form_cta">Démarrer ma création maintenant</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <span class="badge">Formulaire ultra rapide</span>
+        <h1>Démarrez en 1 minute.</h1>
+        <p>Vous renseignez 3 champs. Ensuite, WhatsApp s'ouvre avec un message déjà personnalisé pour accélérer votre prise en charge.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="lead-form" class="form-shell">
+          <div class="form-row">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Ex: Sarah Dupont" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="Ex: sarah@email.com" required />
+          </div>
+
+          <div class="form-row">
+            <label for="need">Type de besoin</label>
+            <select id="need" name="need" required>
+              <option value="" selected disabled>Choisir mon besoin</option>
+              <option value="Création micro-entreprise">Création micro-entreprise</option>
+              <option value="Création société (SASU/SAS/EURL)">Création société (SASU/SAS/EURL)</option>
+              <option value="Modification d'entreprise">Modification d'entreprise</option>
+              <option value="Fermeture d'entreprise">Fermeture d'entreprise</option>
+              <option value="Autre demande">Autre demande</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary btn-block" type="submit" data-track="lead_form_submit_button">Continuer sur WhatsApp maintenant</button>
+          <p class="form-help">Objectif: démarrer vite, sans allers-retours inutiles.</p>
+          <p class="form-help">WhatsApp unique Keybis: 07 80 95 40 94.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="process-grid">
+          <article class="step">
+            <span class="step-number">1</span>
+            <h3>Vous envoyez</h3>
+            <p>Le formulaire prend moins d'une minute.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">2</span>
+            <h3>On cadre le dossier</h3>
+            <p>Réponse rapide et liste des éléments à préparer.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">3</span>
+            <h3>On lance la formalité</h3>
+            <p>Votre dossier avance jusqu'à validation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© <span data-current-year></span> Keybis • 07 80 95 40 94</div>
+      <div class="footer-links">
+        <a href="services.html">Offres</a>
+        <a href="prix.html">Tarifs</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgv.html">CGV</a>
+        <a href="confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

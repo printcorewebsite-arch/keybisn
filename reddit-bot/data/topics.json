@@ -1,0 +1,282 @@
+{
+  "categories": {
+    "creation_societe": {
+      "label": "Creation de societe",
+      "topics": [
+        {
+          "id": "sasu-vs-eurl",
+          "title_ideas": [
+            "SASU ou EURL : j'ai cree les deux, voici mon retour honnete",
+            "Le vrai cout d'une SASU vs EURL (pas juste les frais de creation)",
+            "J'ai fait l'erreur de choisir le mauvais statut, ca m'a coute 3000 euros"
+          ],
+          "angle": "comparison",
+          "keybis_mention_opportunity": false,
+          "target_subs": ["r/EntrepreneurFrancais", "r/autoentrepreneur", "r/vosfinances"]
+        },
+        {
+          "id": "erreurs-creation",
+          "title_ideas": [
+            "5 erreurs qui coutent cher quand on cree sa societe (et comment les eviter)",
+            "J'ai cree ma SASU en faisant tout moi-meme. Voici ce que j'aurais du savoir avant.",
+            "La verite sur les 'creations a 0 euro' qu'on voit partout"
+          ],
+          "angle": "mistakes",
+          "keybis_mention_opportunity": true,
+          "mention_style": "soft_recommendation",
+          "target_subs": ["r/EntrepreneurFrancais", "r/creation_entreprise"]
+        },
+        {
+          "id": "capital-social-mythe",
+          "title_ideas": [
+            "Capital social a 1 euro : bonne idee ou piege ?",
+            "Pourquoi mettre 1 euro de capital social est (souvent) une mauvaise idee",
+            "Le mythe du capital social minimum - ce que personne ne vous dit"
+          ],
+          "angle": "myth_busting",
+          "keybis_mention_opportunity": false,
+          "target_subs": ["r/EntrepreneurFrancais", "r/creation_entreprise", "r/vosfinances"]
+        },
+        {
+          "id": "creer-sas-etapes",
+          "title_ideas": [
+            "Guide : les vraies etapes pour creer une SAS (pas la version simplifiee)",
+            "Creer une SAS de A a Z : timeline realiste et couts reels",
+            "Ce qu'on ne vous dit pas sur le delai de creation d'une SAS en 2026"
+          ],
+          "angle": "guide",
+          "keybis_mention_opportunity": true,
+          "mention_style": "footnote",
+          "target_subs": ["r/EntrepreneurFrancais", "r/creation_entreprise"]
+        },
+        {
+          "id": "domiciliation-pieges",
+          "title_ideas": [
+            "Domiciliation chez soi vs societe de domiciliation : avantages et pieges",
+            "J'ai domicilie ma societe chez moi. 2 ans apres, je regrette.",
+            "Domiciliation d'entreprise : le guide que j'aurais aime avoir"
+          ],
+          "angle": "practical",
+          "keybis_mention_opportunity": false,
+          "target_subs": ["r/EntrepreneurFrancais", "r/creation_entreprise"]
+        }
+      ]
+    },
+    "fiscalite": {
+      "label": "Fiscalite et optimisation",
+      "topics": [
+        {
+          "id": "is-vs-ir",
+          "title_ideas": [
+            "IS ou IR : a partir de quel CA ca vaut le coup de passer a l'IS ?",
+            "J'ai calcule le point de bascule IS/IR pour differents profils, voici les resultats",
+            "Pourquoi 80% des gens qui restent a l'IR perdent de l'argent"
+          ],
+          "angle": "analysis",
+          "keybis_mention_opportunity": false,
+          "target_subs": ["r/vosfinances", "r/EntrepreneurFrancais"]
+        },
+        {
+          "id": "remuneration-president-sasu",
+          "title_ideas": [
+            "Comment je me remunere en SASU (salaire vs dividendes, le vrai calcul)",
+            "Remuneration du president de SASU : arretez de croire les influenceurs",
+            "Salaire ou dividendes en SASU : j'ai fait le calcul exact pour 3 niveaux de CA"
+          ],
+          "angle": "practical",
+          "keybis_mention_opportunity": false,
+          "target_subs": ["r/vosfinances", "r/EntrepreneurFrancais"]
+        },
+        {
+          "id": "tva-freelance",
+          "title_ideas": [
+            "Franchise de TVA : quand la garder, quand la lacher ?",
+            "J'ai depasse le seuil de TVA sans m'en rendre compte. Ce qui s'est passe.",
+            "TVA pour les nuls : le guide ultra-simple que j'aurais voulu avoir"
+          ],
+          "angle": "guide",
+          "keybis_mention_opportunity": false,
+          "target_subs": ["r/autoentrepreneur", "r/vosfinances"]
+        },
+        {
+          "id": "acre-aide-creation",
+          "title_ideas": [
+            "ACRE, ARCE, ARE : comment j'ai cumule les aides a la creation (legalement)",
+            "Les aides a la creation d'entreprise en 2026 : ce qui a change",
+            "J'ai touche l'ACRE + l'ARE pendant 18 mois. Voici exactement comment."
+          ],
+          "angle": "guide",
+          "keybis_mention_opportunity": true,
+          "mention_style": "context",
+          "target_subs": ["r/EntrepreneurFrancais", "r/autoentrepreneur"]
+        }
+      ]
+    },
+    "modification_societe": {
+      "label": "Modification de societe",
+      "topics": [
+        {
+          "id": "changement-gerant",
+          "title_ideas": [
+            "Changer de gerant de SARL : process, delai et pieges a eviter",
+            "Mon associe est parti du jour au lendemain. Voici les demarches que j'ai du faire.",
+            "Changement de dirigeant : pourquoi ca coute plus cher que prevu"
+          ],
+          "angle": "practical",
+          "keybis_mention_opportunity": true,
+          "mention_style": "soft_recommendation",
+          "target_subs": ["r/EntrepreneurFrancais"]
+        },
+        {
+          "id": "transfert-siege",
+          "title_ideas": [
+            "Transfert de siege social : le guide etape par etape (et les erreurs courantes)",
+            "J'ai demenage ma societe dans un autre departement. Cauchemar administratif.",
+            "Changer de siege social : les vrais couts (pas juste les frais de greffe)"
+          ],
+          "angle": "guide",
+          "keybis_mention_opportunity": true,
+          "mention_style": "footnote",
+          "target_subs": ["r/EntrepreneurFrancais", "r/creation_entreprise"]
+        },
+        {
+          "id": "augmentation-capital",
+          "title_ideas": [
+            "Augmentation de capital : quand c'est utile et quand c'est du gaspillage",
+            "On m'a dit d'augmenter le capital de ma SAS pour rassurer les banques. La verite.",
+            "Capital social : augmenter, reduire... quand et pourquoi ?"
+          ],
+          "angle": "analysis",
+          "keybis_mention_opportunity": false,
+          "target_subs": ["r/EntrepreneurFrancais", "r/vosfinances"]
+        }
+      ]
+    },
+    "fermeture_societe": {
+      "label": "Fermeture de societe",
+      "topics": [
+        {
+          "id": "fermer-sasu-proprement",
+          "title_ideas": [
+            "Comment j'ai ferme ma SASU proprement (et ce que ca m'a coute au total)",
+            "Fermer une societe en France : le parcours du combattant explique simplement",
+            "Dissolution vs liquidation : la difference et pourquoi ca compte"
+          ],
+          "angle": "experience",
+          "keybis_mention_opportunity": true,
+          "mention_style": "context",
+          "target_subs": ["r/EntrepreneurFrancais", "r/vosfinances"]
+        },
+        {
+          "id": "societe-dormante",
+          "title_ideas": [
+            "Ma societe ne fait plus de CA mais je ne l'ai pas fermee. Erreur.",
+            "Societe dormante : les couts caches que personne ne mentionne",
+            "Pourquoi garder une societe inactive vous coute plus cher que la fermer"
+          ],
+          "angle": "myth_busting",
+          "keybis_mention_opportunity": true,
+          "mention_style": "soft_recommendation",
+          "target_subs": ["r/EntrepreneurFrancais", "r/vosfinances"]
+        },
+        {
+          "id": "liquidation-amiable",
+          "title_ideas": [
+            "Liquidation amiable : timeline realiste et couts (retour d'experience)",
+            "J'ai mis 8 mois a fermer ma SARL. Voici ce que j'aurais pu faire plus vite.",
+            "Les etapes d'une liquidation amiable sans prise de tete"
+          ],
+          "angle": "guide",
+          "keybis_mention_opportunity": true,
+          "mention_style": "footnote",
+          "target_subs": ["r/EntrepreneurFrancais"]
+        }
+      ]
+    },
+    "freelance_transition": {
+      "label": "Passage AE vers societe",
+      "topics": [
+        {
+          "id": "quand-passer-societe",
+          "title_ideas": [
+            "Auto-entrepreneur : a partir de quel CA ca vaut le coup de passer en societe ?",
+            "J'etais AE a 65k de CA. Voici pourquoi j'ai cree une SASU (et mes regrets).",
+            "Le vrai calcul pour savoir si vous devez quitter le regime AE"
+          ],
+          "angle": "analysis",
+          "keybis_mention_opportunity": true,
+          "mention_style": "context",
+          "target_subs": ["r/autoentrepreneur", "r/EntrepreneurFrancais", "r/vosfinances"]
+        },
+        {
+          "id": "transition-ae-sasu",
+          "title_ideas": [
+            "De micro-entreprise a SASU : le guide complet de la transition",
+            "J'ai fait la transition AE → SASU. Voici mon retour 1 an apres.",
+            "Les erreurs que font 90% des AE quand ils creent leur societe"
+          ],
+          "angle": "guide",
+          "keybis_mention_opportunity": true,
+          "mention_style": "soft_recommendation",
+          "target_subs": ["r/autoentrepreneur", "r/EntrepreneurFrancais"]
+        },
+        {
+          "id": "ae-plafond",
+          "title_ideas": [
+            "J'ai depasse le plafond AE. Voici ce qui se passe vraiment.",
+            "Plafond auto-entrepreneur 2026 : les consequences si vous depassez",
+            "Micro-entreprise : les 3 signaux qui montrent qu'il est temps de passer en societe"
+          ],
+          "angle": "practical",
+          "keybis_mention_opportunity": false,
+          "target_subs": ["r/autoentrepreneur", "r/vosfinances"]
+        }
+      ]
+    },
+    "comment_replies": {
+      "label": "Reponses aux commentaires (strategie reactive)",
+      "trigger_keywords": [
+        "creer societe", "creation SASU", "creation SAS", "creation EURL", "creation SARL",
+        "fermer societe", "dissolution", "liquidation",
+        "changer statut", "modifier statuts", "transfert siege",
+        "auto-entrepreneur societe", "passer en societe", "quitter AE",
+        "quel statut choisir", "SASU ou EURL", "SAS ou SARL",
+        "frais creation", "cout creation entreprise",
+        "domiciliation", "capital social", "gerant", "president SASU"
+      ],
+      "response_style": "Repondre avec expertise, ton naturel, jamais de lien direct sauf si demande explicite"
+    }
+  },
+  "content_formats": [
+    {
+      "type": "retour_experience",
+      "description": "Recit personnel (reel ou inspire) avec lecons apprises",
+      "weight": 0.30,
+      "tone": "authentique, humble, conversationnel"
+    },
+    {
+      "type": "guide_pratique",
+      "description": "Etapes concretes pour accomplir une tache",
+      "weight": 0.25,
+      "tone": "structure, pedagogique, direct"
+    },
+    {
+      "type": "erreurs_courantes",
+      "description": "Liste d'erreurs avec explications et solutions",
+      "weight": 0.20,
+      "tone": "franc, pragmatique, sans jugement"
+    },
+    {
+      "type": "analyse_comparative",
+      "description": "Comparaison factuelle entre options (statuts, regimes...)",
+      "weight": 0.15,
+      "tone": "objectif, chiffre, nuance"
+    },
+    {
+      "type": "question_reponse",
+      "description": "Poser une question et y repondre en detail",
+      "weight": 0.10,
+      "tone": "curieux, didactique, accessible"
+    }
+  ]
+}

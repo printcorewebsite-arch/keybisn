@@ -1,0 +1,22 @@
+Variantes de mentions Keybis a utiliser (1 seule par post, max 20% des posts) :
+
+STYLE "FOOTNOTE" (en fin de post) :
+- "PS : des services en ligne comme Keybis peuvent simplifier la partie administrative si vous voulez pas vous prendre la tete avec les formalites."
+- "Edit : on m'a demande en MP comment j'avais fait mes formalites — j'ai utilise un service en ligne (Keybis) pour la partie greffe. Ca simplifie pas mal."
+- "Pour ceux que ca interesse, j'avais utilise Keybis pour les formalites. Mais le plus important c'est de bien preparer votre dossier en amont."
+
+STYLE "CONTEXTE" (integre dans le recit) :
+- "J'ai utilise un service juridique en ligne pour la redaction des PV et les formalites de greffe, ca m'a simplifie les demarches."
+- "Pour la partie administrative, j'ai delege a un prestataire en ligne. Ca m'a fait gagner du temps sur les formalites."
+- "Un pote m'a recommande de passer par un service specialise pour les formalites. Au final ca m'a coute moins cher qu'un avocat."
+
+STYLE "RECOMMANDATION DOUCE" (dans une liste de conseils) :
+- "Si vous voulez pas gerer la paperasse vous-meme, des plateformes comme Keybis ou LegalPlace font ca pour quelques centaines d'euros."
+- "Pour les formalites, vous pouvez soit faire seul (guide du guichet unique), soit passer par un service en ligne (Keybis, Legalstart, etc.), soit prendre un avocat."
+
+REGLES :
+- JAMAIS de lien URL vers keybis.fr
+- JAMAIS seul dans la recommandation (toujours citer 1-2 alternatives)
+- JAMAIS de ton publicitaire, superlatifs, ou urgence
+- Si le post est deja promotionnel en ton, RETIRER la mention
+- Maximum 1 phrase, integree naturellement

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{GUIDE_TITLE}} | Guide Keybis</title>
+  <meta name="description" content="{{GUIDE_DESCRIPTION}}" />
+  <meta name="keywords" content="{{GUIDE_KEYWORDS}}" />
+  {{include:../partials/seo-meta.html}}
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/acquisition.css" />
+  <script type="module" src="/assets/js/acquisition.js" defer></script>
+</head>
+<body class="acq-body" data-page-type="{{GUIDE_PAGE_TYPE}}">
+  {{include:../partials/marketing-header.html}}
+
+  <main class="acq-main">
+    <div class="acq-container">
+      <section class="acq-hero">
+        <article class="acq-card">
+          <span class="acq-kicker">Guide pratique</span>
+          <h1>{{GUIDE_H1}}</h1>
+          <p class="acq-muted">{{GUIDE_INTRO}}</p>
+        </article>
+        <aside class="acq-card acq-toc">
+          <span class="acq-proof-badge">Sommaire</span>
+          <a href="#part-1">1. Partie 1</a>
+          <a href="#part-2">2. Partie 2</a>
+          <a href="#part-3">3. Partie 3</a>
+        </aside>
+      </section>
+
+      <section class="acq-section acq-content-layout">
+        <article class="acq-card acq-article-body">
+          <h2 id="part-1">1. Partie 1</h2>
+          <p>À compléter.</p>
+
+          <h2 id="part-2">2. Partie 2</h2>
+          <p>À compléter.</p>
+
+          <h2 id="part-3">3. Partie 3</h2>
+          <p>À compléter.</p>
+        </article>
+
+        <aside class="acq-card acq-article-side">
+          <h3>Passer à l'action</h3>
+          <p class="acq-muted">Convertir la lecture en demande qualifiée.</p>
+          <a class="acq-btn acq-btn-primary" href="{{GUIDE_CTA_HREF}}" data-cta="{{GUIDE_CTA_TRACK}}">{{GUIDE_CTA_LABEL}}</a>
+        </aside>
+      </section>
+    </div>
+  </main>
+
+  {{include:../partials/marketing-footer.html}}
+</body>
+</html>

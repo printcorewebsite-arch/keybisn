@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Leads | Keybis</title>
+  <meta name="description" content="Dashboard admin leads Keybis: stats conversion, filtres avancés, recherche, suivi des leads et actions WhatsApp." />
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/acquisition.css" />
+  <script type="module" src="/assets/js/admin-leads.js" defer></script>
+</head>
+<body class="acq-body" data-page-type="admin_leads">
+  <header class="acq-header">
+    <div class="acq-container acq-header-row">
+      <a class="acq-brand" href="/">
+        <img src="/assets/images/logo-keybis.png" alt="Logo Keybis" />
+        <div>KEYBIS <span>Admin Leads</span></div>
+      </a>
+      <a class="acq-btn acq-btn-secondary" href="/">Retour site</a>
+    </div>
+  </header>
+
+  <main class="acq-main" id="main-content">
+    <div class="acq-container">
+      <div id="admin-notice" class="acq-notice acq-hidden"></div>
+
+      <section id="admin-auth-panel" class="acq-card">
+        <h1>Accès admin leads</h1>
+        <p class="acq-muted">Entrez votre clé admin pour accéder aux leads et statistiques de conversion.</p>
+        <form id="admin-key-form" class="acq-form" style="max-width:480px;">
+          <div class="acq-field">
+            <label for="admin-key">Clé admin</label>
+            <input id="admin-key" type="password" autocomplete="off" required />
+          </div>
+          <button class="acq-btn acq-btn-primary" type="submit">Se connecter</button>
+        </form>
+      </section>
+
+      <section id="admin-app" class="acq-hidden">
+        <article class="acq-card">
+          <h2>Vue conversion</h2>
+          <div class="acq-grid-4 acq-admin-stats">
+            <div class="acq-stat"><strong id="stat-total">0</strong><span>Leads filtrés</span></div>
+            <div class="acq-stat"><strong id="stat-global">0</strong><span>Leads totaux</span></div>
+            <div class="acq-stat"><strong id="stat-new">0</strong><span>Nouveaux</span></div>
+            <div class="acq-stat"><strong id="stat-contacted">0</strong><span>Contactés</span></div>
+            <div class="acq-stat"><strong id="stat-wa-rate">0%</strong><span>Taux clic WhatsApp</span></div>
+            <div class="acq-stat"><strong id="stat-avg">-</strong><span>Pack moyen</span></div>
+          </div>
+        </article>
+
+        <article class="acq-card acq-section">
+          <div class="acq-toolbar">
+            <input id="lead-search" type="search" placeholder="Recherche: nom, email, téléphone, besoin..." />
+            <select id="lead-filter">
+              <option value="">Tous les statuts</option>
+              <option value="new">Nouveaux</option>
+              <option value="contacted">Contactés</option>
+            </select>
+            <select id="need-filter">
+              <option value="">Tous les besoins</option>
+              <option value="creation">Création</option>
+              <option value="modification">Modification</option>
+              <option value="fermeture">Fermeture</option>
+            </select>
+            <select id="source-filter">
+              <option value="">Toutes les sources</option>
+            </select>
+          </div>
+
+          <div class="acq-actions">
+            <button id="refresh-btn" class="acq-btn acq-btn-secondary" type="button">Rafraîchir</button>
+            <button id="logout-admin-btn" class="acq-btn acq-btn-ghost" type="button">Déconnexion</button>
+          </div>
+
+          <div style="overflow:auto; margin-top:12px;">
+            <table class="acq-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Nom</th>
+                  <th>Besoin</th>
+                  <th>Téléphone</th>
+                  <th>Source</th>
+                  <th>Offre</th>
+                  <th>Statut</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="leads-tbody"></tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="acq-card acq-section">
+          <h2>Détail lead</h2>
+          <p id="lead-empty" class="acq-muted">Sélectionnez un lead pour voir les détails.</p>
+
+          <div id="lead-detail-content" class="acq-hidden">
+            <div class="acq-grid-2">
+              <div class="acq-summary-item"><strong>Nom</strong><span id="detail-name">-</span></div>
+              <div class="acq-summary-item"><strong>Téléphone</strong><span id="detail-phone">-</span></div>
+              <div class="acq-summary-item"><strong>Email</strong><span id="detail-email">-</span></div>
+              <div class="acq-summary-item"><strong>Besoin</strong><span id="detail-need">-</span></div>
+              <div class="acq-summary-item"><strong>Activité / Modif</strong><span id="detail-activity">-</span></div>
+              <div class="acq-summary-item"><strong>Statut / Forme</strong><span id="detail-status">-</span></div>
+              <div class="acq-summary-item"><strong>Urgence</strong><span id="detail-urgency">-</span></div>
+              <div class="acq-summary-item"><strong>Offre</strong><span id="detail-price">-</span></div>
+              <div class="acq-summary-item"><strong>Date création</strong><span id="detail-created">-</span></div>
+              <div class="acq-summary-item"><strong>Clic WhatsApp</strong><span id="detail-whatsapp">-</span></div>
+              <div class="acq-summary-item"><strong>Source</strong><span id="detail-source">-</span></div>
+              <div class="acq-summary-item"><strong>Statut lead</strong><span id="detail-lead-status" class="acq-status new">Nouveau</span></div>
+            </div>
+
+            <div class="acq-summary-item acq-section">
+              <strong>Détails complémentaires</strong>
+              <span id="detail-details">-</span>
+            </div>
+
+            <div class="acq-actions">
+              <button id="toggle-status-btn" class="acq-btn acq-btn-primary" type="button">Marquer Contacté</button>
+              <button id="copy-phone-btn" class="acq-btn acq-btn-secondary" type="button">Copier numéro</button>
+              <button id="open-whatsapp-btn" class="acq-btn acq-btn-ghost" type="button">Ouvrir WhatsApp direct</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="acq-footer">
+    <div class="acq-container acq-footer-row">
+      <div>© <span id="year"></span> Keybis</div>
+      <div>Dashboard conversion & acquisition</div>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = String(new Date().getFullYear());</script>
+</body>
+</html>

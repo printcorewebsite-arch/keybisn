@@ -1,0 +1,12 @@
+{
+  "name": "keybis-platform",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "check": "node --check backend/server.js",
+    "scaffold:seo": "node scripts/scaffold-seo-page.mjs"
+  }
+}

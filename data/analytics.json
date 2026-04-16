@@ -1,0 +1,1253 @@
+[
+  {
+    "id": "trk_1776310583840_58q6s0",
+    "ts": "2026-04-16T03:36:23.840Z",
+    "event": "acq_page_view",
+    "page": "/tarifs",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "comment_ca_marche",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/tarifs",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/a-propos",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776310868232_5u0ebh",
+    "ts": "2026-04-16T03:41:08.233Z",
+    "event": "acq_nav_click",
+    "page": "/tarifs",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_apropos",
+      "pageType": "comment_ca_marche",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/tarifs",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/a-propos",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776310868300_u1zrjt",
+    "ts": "2026-04-16T03:41:08.300Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776310872916_i47s9c",
+    "ts": "2026-04-16T03:41:12.916Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311029683_peveo6",
+    "ts": "2026-04-16T03:43:49.683Z",
+    "event": "acq_nav_click",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "mobile_tarifs",
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311029719_qssiz1",
+    "ts": "2026-04-16T03:43:49.719Z",
+    "event": "acq_page_view",
+    "page": "/tarifs",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "comment_ca_marche",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/tarifs",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/a-propos",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311032606_x78xph",
+    "ts": "2026-04-16T03:43:52.606Z",
+    "event": "acq_page_view",
+    "page": "/tarifs",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "comment_ca_marche",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/tarifs",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/a-propos",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311348643_fdii4x",
+    "ts": "2026-04-16T03:49:08.644Z",
+    "event": "acq_nav_click",
+    "page": "/tarifs",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_apropos",
+      "pageType": "comment_ca_marche",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/tarifs",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/a-propos",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311348708_qedhfo",
+    "ts": "2026-04-16T03:49:08.708Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311350405_de5evp",
+    "ts": "2026-04-16T03:49:10.405Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311351924_yfwael",
+    "ts": "2026-04-16T03:49:11.924Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311352504_0r15ne",
+    "ts": "2026-04-16T03:49:12.504Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311352766_godaa5",
+    "ts": "2026-04-16T03:49:12.766Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311446383_zw6zti",
+    "ts": "2026-04-16T03:50:46.383Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311447140_l9arn9",
+    "ts": "2026-04-16T03:50:47.140Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311447730_s1w3q2",
+    "ts": "2026-04-16T03:50:47.730Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311447983_wmx5rc",
+    "ts": "2026-04-16T03:50:47.983Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311448100_44za7g",
+    "ts": "2026-04-16T03:50:48.100Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311448360_0c2tnc",
+    "ts": "2026-04-16T03:50:48.360Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311462052_0lbz04",
+    "ts": "2026-04-16T03:51:02.052Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311462606_t4dzte",
+    "ts": "2026-04-16T03:51:02.606Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311462968_lnzpss",
+    "ts": "2026-04-16T03:51:02.968Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311463153_zn9h43",
+    "ts": "2026-04-16T03:51:03.153Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311463302_kktv2z",
+    "ts": "2026-04-16T03:51:03.302Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311463445_9aohuh",
+    "ts": "2026-04-16T03:51:03.445Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311463585_mjdfhs",
+    "ts": "2026-04-16T03:51:03.585Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311463801_320std",
+    "ts": "2026-04-16T03:51:03.801Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311463921_39m5uk",
+    "ts": "2026-04-16T03:51:03.921Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311464016_997baz",
+    "ts": "2026-04-16T03:51:04.016Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311464125_0zns6u",
+    "ts": "2026-04-16T03:51:04.125Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311464234_x03n0k",
+    "ts": "2026-04-16T03:51:04.234Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311478661_rfe99g",
+    "ts": "2026-04-16T03:51:18.661Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311479330_4b8sv9",
+    "ts": "2026-04-16T03:51:19.330Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311479467_d81pr6",
+    "ts": "2026-04-16T03:51:19.467Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311479591_jw6qmr",
+    "ts": "2026-04-16T03:51:19.591Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311544285_dgvq4b",
+    "ts": "2026-04-16T03:52:24.285Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311545027_43vdbi",
+    "ts": "2026-04-16T03:52:25.027Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311698524_tloq22",
+    "ts": "2026-04-16T03:54:58.524Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311702065_62vepl",
+    "ts": "2026-04-16T03:55:02.065Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311708769_ysc1l1",
+    "ts": "2026-04-16T03:55:08.769Z",
+    "event": "acq_nav_click",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "mobile_apropos",
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311708808_zwq9g3",
+    "ts": "2026-04-16T03:55:08.808Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/a-propos",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311750613_usp36f",
+    "ts": "2026-04-16T03:55:50.613Z",
+    "event": "acq_nav_click",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_tarifs",
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/a-propos",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311750666_2wss0y",
+    "ts": "2026-04-16T03:55:50.666Z",
+    "event": "acq_page_view",
+    "page": "/tarifs",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "comment_ca_marche",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/tarifs",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/a-propos",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311832221_99t5g7",
+    "ts": "2026-04-16T03:57:12.221Z",
+    "event": "acq_nav_click",
+    "page": "/tarifs",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_tarifs",
+      "pageType": "comment_ca_marche",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/tarifs",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/a-propos",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311832276_m0blbf",
+    "ts": "2026-04-16T03:57:12.276Z",
+    "event": "acq_page_view",
+    "page": "/tarifs",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "comment_ca_marche",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/tarifs",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311833218_mwj4jg",
+    "ts": "2026-04-16T03:57:13.218Z",
+    "event": "acq_nav_click",
+    "page": "/tarifs",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_fermeture",
+      "pageType": "comment_ca_marche",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/tarifs",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311833274_45f5n2",
+    "ts": "2026-04-16T03:57:13.274Z",
+    "event": "acq_page_view",
+    "page": "/fermeture-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "service_fermeture",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/fermeture-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311834060_yf9jj0",
+    "ts": "2026-04-16T03:57:14.060Z",
+    "event": "acq_nav_click",
+    "page": "/fermeture-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_modification",
+      "pageType": "service_fermeture",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/fermeture-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/tarifs",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311834094_o8h0z0",
+    "ts": "2026-04-16T03:57:14.094Z",
+    "event": "acq_page_view",
+    "page": "/modification-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "service_modification",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/modification-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/fermeture-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311834615_t0ivbt",
+    "ts": "2026-04-16T03:57:14.615Z",
+    "event": "acq_nav_click",
+    "page": "/modification-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_creation",
+      "pageType": "service_modification",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/modification-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/fermeture-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311834665_fwlelc",
+    "ts": "2026-04-16T03:57:14.665Z",
+    "event": "acq_page_view",
+    "page": "/creation-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "service_creation",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/creation-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/modification-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311835554_yvepbm",
+    "ts": "2026-04-16T03:57:15.554Z",
+    "event": "acq_nav_click",
+    "page": "/creation-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_modification",
+      "pageType": "service_creation",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/creation-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/modification-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311835588_kbblt8",
+    "ts": "2026-04-16T03:57:15.588Z",
+    "event": "acq_page_view",
+    "page": "/modification-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "service_modification",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/modification-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/creation-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311836141_uv8w36",
+    "ts": "2026-04-16T03:57:16.141Z",
+    "event": "acq_nav_click",
+    "page": "/modification-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_creation",
+      "pageType": "service_modification",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/modification-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/creation-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776311836175_2ix1kf",
+    "ts": "2026-04-16T03:57:16.175Z",
+    "event": "acq_page_view",
+    "page": "/creation-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "service_creation",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/creation-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/modification-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776313220715_o3f3tl",
+    "ts": "2026-04-16T04:20:20.715Z",
+    "event": "acq_nav_click",
+    "page": "/creation-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_modification",
+      "pageType": "service_creation",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/creation-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/modification-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776313220808_ldctwi",
+    "ts": "2026-04-16T04:20:20.808Z",
+    "event": "acq_page_view",
+    "page": "/modification-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "service_modification",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/modification-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/creation-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776313228338_osiuc4",
+    "ts": "2026-04-16T04:20:28.339Z",
+    "event": "acq_nav_click",
+    "page": "/modification-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_fermeture",
+      "pageType": "service_modification",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/modification-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/creation-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776313228371_voakr6",
+    "ts": "2026-04-16T04:20:28.371Z",
+    "event": "acq_page_view",
+    "page": "/fermeture-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "service_fermeture",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/fermeture-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/modification-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776313246091_p06azj",
+    "ts": "2026-04-16T04:20:46.091Z",
+    "event": "acq_nav_click",
+    "page": "/fermeture-societe",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_formalites",
+      "pageType": "service_fermeture",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/fermeture-societe",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/modification-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776313246137_xx4e9w",
+    "ts": "2026-04-16T04:20:46.137Z",
+    "event": "acq_page_view",
+    "page": "/documents-juridiques",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "formalites_juridiques",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/documents-juridiques",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/fermeture-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776313255716_95xtvt",
+    "ts": "2026-04-16T04:20:55.716Z",
+    "event": "acq_nav_click",
+    "page": "/documents-juridiques",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_guides",
+      "pageType": "formalites_juridiques",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/documents-juridiques",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/fermeture-societe",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776313255778_j0j5n5",
+    "ts": "2026-04-16T04:20:55.778Z",
+    "event": "acq_page_view",
+    "page": "/guides",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "guides_hub",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/guides",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/documents-juridiques",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776313260080_176oab",
+    "ts": "2026-04-16T04:21:00.080Z",
+    "event": "acq_nav_click",
+    "page": "/guides",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "nav": "main_apropos",
+      "pageType": "guides_hub",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/guides",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/documents-juridiques",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  },
+  {
+    "id": "trk_1776313260129_xrgdkb",
+    "ts": "2026-04-16T04:21:00.129Z",
+    "event": "acq_page_view",
+    "page": "/a-propos",
+    "source": "referrer",
+    "userId": null,
+    "payload": {
+      "pageType": "a_propos",
+      "context": {
+        "firstPath": "/",
+        "lastPath": "/a-propos",
+        "firstReferrer": "http://127.0.0.1:3000/",
+        "lastReferrer": "http://127.0.0.1:3000/guides",
+        "firstCampaign": {},
+        "lastCampaign": {}
+      }
+    }
+  }
+]
