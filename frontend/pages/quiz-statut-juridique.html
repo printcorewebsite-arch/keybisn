@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz : Quel statut juridique choisir ? | Gratuit | Keybis</title>
+  <meta name="description" content="Trouvez le statut juridique idéal pour votre projet en 2 minutes : SASU, SARL, auto-entrepreneur, SCI... Quiz gratuit et personnalisé." />
+  <meta name="keywords" content="quel statut juridique choisir, quiz statut entreprise, sasu ou sarl, comparatif statut juridique, meilleur statut créer entreprise" />
+  {{include:../partials/seo-meta.html}}
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/acquisition.css" />
+  <script type="module" src="/assets/js/acquisition.js" defer></script>
+</head>
+<body class="acq-body" data-page-type="quiz_statut">
+  {{include:../partials/marketing-header.html}}
+
+  <main class="acq-main" id="main-content">
+    <div class="acq-container">
+      <section class="acq-hero acq-hero-premium acq-hero-single">
+        <article class="acq-card acq-hero-main" style="max-width: 720px; margin: 0 auto;">
+          <span class="acq-kicker">Quiz gratuit — 2 minutes</span>
+          <h1>Quel statut juridique est fait pour vous ?</h1>
+          <p class="acq-muted">Répondez à 6 questions simples et découvrez la forme juridique la mieux adaptée à votre projet, votre situation et vos objectifs.</p>
+        </article>
+      </section>
+
+      <section class="acq-section-shell" style="max-width: 700px; margin: 0 auto;">
+        <div class="acq-card" id="quiz-card">
+
+          <!-- Q1: Combien d'associés -->
+          <div id="q-1" class="quiz-step">
+            <div class="quiz-q-header">
+              <span class="quiz-q-num">1/6</span>
+              <h2>Combien de personnes lancent ce projet ?</h2>
+            </div>
+            <div class="sim-grid">
+              <button class="sim-option" data-value="solo" type="button">
+                <strong>Juste moi</strong>
+                <span>Entrepreneur solo</span>
+              </button>
+              <button class="sim-option" data-value="duo" type="button">
+                <strong>2 personnes</strong>
+                <span>Avec un associé</span>
+              </button>
+              <button class="sim-option" data-value="multi" type="button">
+                <strong>3 ou plus</strong>
+                <span>Équipe ou famille</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Q2: Type d'activité -->
+          <div id="q-2" class="quiz-step acq-hidden">
+            <div class="quiz-q-header">
+              <span class="quiz-q-num">2/6</span>
+              <h2>Quel est le type de votre activité ?</h2>
+            </div>
+            <div class="sim-grid">
+              <button class="sim-option" data-value="service" type="button">
+                <strong>Services / Conseil</strong>
+                <span>Consulting, freelance, IT...</span>
+              </button>
+              <button class="sim-option" data-value="commerce" type="button">
+                <strong>Commerce / E-commerce</strong>
+                <span>Vente de produits</span>
+              </button>
+              <button class="sim-option" data-value="artisan" type="button">
+                <strong>Artisanat</strong>
+                <span>Travaux, fabrication...</span>
+              </button>
+              <button class="sim-option" data-value="immo" type="button">
+                <strong>Immobilier</strong>
+                <span>Investissement, gestion</span>
+              </button>
+              <button class="sim-option" data-value="liberal" type="button">
+                <strong>Profession libérale</strong>
+                <span>Médical, juridique, archi...</span>
+              </button>
+              <button class="sim-option" data-value="tech" type="button">
+                <strong>Startup / Tech</strong>
+                <span>Levée de fonds prévue</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Q3: Chiffre d'affaires prévu -->
+          <div id="q-3" class="quiz-step acq-hidden">
+            <div class="quiz-q-header">
+              <span class="quiz-q-num">3/6</span>
+              <h2>Quel chiffre d'affaires annuel visez-vous ?</h2>
+            </div>
+            <div class="sim-grid">
+              <button class="sim-option" data-value="petit" type="button">
+                <strong>Moins de 30 000 €</strong>
+                <span>Activité secondaire ou démarrage</span>
+              </button>
+              <button class="sim-option" data-value="moyen" type="button">
+                <strong>30 000 - 77 700 €</strong>
+                <span>Activité principale</span>
+              </button>
+              <button class="sim-option" data-value="grand" type="button">
+                <strong>77 700 € - 300 000 €</strong>
+                <span>Croissance</span>
+              </button>
+              <button class="sim-option" data-value="tres_grand" type="button">
+                <strong>Plus de 300 000 €</strong>
+                <span>Structure solide nécessaire</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Q4: Protection patrimoine -->
+          <div id="q-4" class="quiz-step acq-hidden">
+            <div class="quiz-q-header">
+              <span class="quiz-q-num">4/6</span>
+              <h2>La protection de votre patrimoine personnel est...</h2>
+            </div>
+            <div class="sim-grid" style="grid-template-columns: 1fr 1fr;">
+              <button class="sim-option" data-value="prioritaire" type="button">
+                <strong>Prioritaire</strong>
+                <span>Je veux séparer mes biens perso</span>
+              </button>
+              <button class="sim-option" data-value="pas_prioritaire" type="button">
+                <strong>Pas prioritaire</strong>
+                <span>Activité à faible risque</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Q5: Rémunération -->
+          <div id="q-5" class="quiz-step acq-hidden">
+            <div class="quiz-q-header">
+              <span class="quiz-q-num">5/6</span>
+              <h2>Comment souhaitez-vous vous rémunérer ?</h2>
+            </div>
+            <div class="sim-grid">
+              <button class="sim-option" data-value="salaire" type="button">
+                <strong>Salaire mensuel</strong>
+                <span>Régularité, cotisations sociales</span>
+              </button>
+              <button class="sim-option" data-value="dividendes" type="button">
+                <strong>Dividendes</strong>
+                <span>Optimisation fiscale</span>
+              </button>
+              <button class="sim-option" data-value="mixte" type="button">
+                <strong>Les deux</strong>
+                <span>Salaire + dividendes</span>
+              </button>
+              <button class="sim-option" data-value="pas_encore" type="button">
+                <strong>Je ne sais pas encore</strong>
+                <span>J'ai besoin de conseils</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Q6: Budget -->
+          <div id="q-6" class="quiz-step acq-hidden">
+            <div class="quiz-q-header">
+              <span class="quiz-q-num">6/6</span>
+              <h2>Quel budget de création pouvez-vous investir ?</h2>
+            </div>
+            <div class="sim-grid" style="grid-template-columns: 1fr 1fr;">
+              <button class="sim-option" data-value="minimal" type="button">
+                <strong>Le minimum possible</strong>
+                <span>0 - 200 €</span>
+              </button>
+              <button class="sim-option" data-value="modere" type="button">
+                <strong>Budget modéré</strong>
+                <span>200 - 500 €</span>
+              </button>
+              <button class="sim-option" data-value="confortable" type="button">
+                <strong>Budget confortable</strong>
+                <span>500 € +</span>
+              </button>
+              <button class="sim-option" data-value="indifferent" type="button">
+                <strong>Peu importe</strong>
+                <span>Le meilleur choix prime</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Progress bar -->
+          <div class="sim-progress" id="quiz-progress">
+            <div class="sim-progress-bar">
+              <div class="sim-progress-fill" id="quiz-progress-fill" style="width: 0%"></div>
+            </div>
+            <span class="sim-progress-text" id="quiz-progress-text">Question 1/6</span>
+          </div>
+
+          <!-- Gate: email pour voir résultat -->
+          <div id="quiz-gate" class="quiz-step acq-hidden">
+            <div style="text-align:center; padding:10px 0 20px;">
+              <h2 style="font-size:1.2rem; margin-bottom:8px;">Votre résultat est prêt !</h2>
+              <p class="acq-muted" style="margin-bottom:20px;">Entrez votre email pour découvrir le statut idéal pour vous + un récapitulatif personnalisé.</p>
+              <form id="quiz-email-form" class="acq-form" style="max-width:400px; margin:0 auto;">
+                <input type="email" id="quiz-email" placeholder="Votre email" required class="acq-field" style="width:100%; margin-bottom:12px;" />
+                <button type="submit" class="acq-btn acq-btn-primary" style="width:100%;">Découvrir mon résultat</button>
+              </form>
+              <p class="acq-muted" style="font-size:.75rem; margin-top:10px;">Pas de spam — juste votre résultat et des conseils utiles.</p>
+            </div>
+          </div>
+
+          <!-- Résultat -->
+          <div id="quiz-result" class="quiz-step acq-hidden">
+            <div class="quiz-result-box" id="quiz-result-box">
+              <div class="quiz-result-badge" id="result-badge">SASU</div>
+              <h2 id="result-title" style="font-size:1.2rem; margin:14px 0 8px;">La SASU est le statut idéal pour vous</h2>
+              <p class="acq-muted" id="result-desc" style="font-size:.9rem;"></p>
+            </div>
+
+            <div class="quiz-result-details">
+              <h3 style="font-size:1rem; margin-bottom:12px;">Pourquoi ce statut ?</h3>
+              <ul id="result-reasons" class="quiz-reasons-list"></ul>
+            </div>
+
+            <div class="quiz-result-details" style="margin-top:16px;">
+              <h3 style="font-size:1rem; margin-bottom:12px;">Alternatives à considérer</h3>
+              <div id="result-alternatives"></div>
+            </div>
+
+            <!-- CTA -->
+            <div style="text-align:center; margin-top:24px; padding-top:20px; border-top: 1px solid #e5e7eb;">
+              <p style="margin-bottom:12px; font-size:.95rem;">Besoin d'un accompagnement pour créer votre <span id="result-form-cta">SASU</span> ?</p>
+              <a class="acq-btn acq-btn-primary" href="/demande?service=creation" data-cta="quiz_cta_demande" id="result-cta-link">Parler à un expert Keybis</a>
+              <p class="acq-muted" style="font-size:.8rem; margin-top:8px;">Dès 89 € · Réponse en 10 min · Sans engagement</p>
+            </div>
+
+            <div style="text-align:center; margin-top:14px;">
+              <a href="/simulateur-couts" class="acq-btn acq-btn-ghost" style="font-size:.85rem;">Estimer le coût de création</a>
+            </div>
+
+            <button type="button" class="acq-btn acq-btn-ghost" id="quiz-restart" style="margin-top:16px; width:100%;">Refaire le quiz</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ SEO -->
+      <section class="acq-section-shell" style="max-width: 700px; margin: 0 auto;">
+        <div class="acq-section-head acq-section-head--centered">
+          <h2>Questions fréquentes sur le choix du statut</h2>
+        </div>
+        <div class="acq-faq-list">
+          <details class="acq-faq-item">
+            <summary>SASU ou SARL : quelle différence ?</summary>
+            <div class="acq-faq-answer">
+              <p>La SASU offre plus de flexibilité (président assimilé salarié, dividendes non soumis aux charges sociales) tandis que la SARL a un cadre plus encadré (gérant TNS, charges sociales sur dividendes au-delà de 10% du capital). La SASU est souvent préférée pour optimiser la rémunération en dividendes.</p>
+            </div>
+          </details>
+          <details class="acq-faq-item">
+            <summary>Peut-on passer d'auto-entrepreneur à société ?</summary>
+            <div class="acq-faq-answer">
+              <p>Oui, la transition est courante quand le chiffre d'affaires dépasse les plafonds (77 700 € en services, 188 700 € en commerce). Il faut créer la société, transférer l'activité, puis fermer la micro-entreprise.</p>
+            </div>
+          </details>
+          <details class="acq-faq-item">
+            <summary>Quel statut pour payer le moins de charges ?</summary>
+            <div class="acq-faq-answer">
+              <p>L'auto-entrepreneur paie des charges simplifiées (~22% du CA en services). Pour les sociétés, la SASU permet d'optimiser via les dividendes (flat tax 30%), tandis que le gérant SARL paie des charges TNS (~45% mais avec meilleure couverture). Le choix dépend de votre niveau de rémunération.</p>
+            </div>
+          </details>
+          <details class="acq-faq-item">
+            <summary>Faut-il un expert-comptable pour choisir ?</summary>
+            <div class="acq-faq-answer">
+              <p>Un expert-comptable peut aider à optimiser le choix fiscal, mais ce n'est pas obligatoire. Des plateformes comme Keybis vous orientent gratuitement vers le meilleur statut en fonction de votre situation.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  {{include:../partials/marketing-footer.html}}
+
+  <style>
+    .quiz-step { animation: simFadeIn .3s ease; }
+    @keyframes simFadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+    .sim-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap:10px; margin-bottom:16px; }
+    .sim-option { background:#fff; border:2px solid #e5e7eb; border-radius:10px; padding:14px 12px; text-align:center; cursor:pointer; transition:all .2s; display:flex; flex-direction:column; gap:2px; }
+    .sim-option:hover { border-color: var(--acq-primary, #0f5bcf); background:#f0f5ff; }
+    .sim-option.selected { border-color: var(--acq-primary, #0f5bcf); background:#e8f0fe; box-shadow: 0 0 0 3px rgba(15,91,207,.15); }
+    .sim-option strong { font-size:1rem; color:#1a1a2e; }
+    .sim-option span { font-size:.78rem; color:#666; }
+    .sim-progress { margin-top:20px; padding-top:16px; border-top:1px solid #e5e7eb; display:flex; align-items:center; gap:12px; }
+    .sim-progress-bar { flex:1; height:6px; background:#e5e7eb; border-radius:3px; overflow:hidden; }
+    .sim-progress-fill { height:100%; background:var(--acq-primary, #0f5bcf); border-radius:3px; transition:width .4s ease; }
+    .sim-progress-text { font-size:.8rem; color:#666; white-space:nowrap; }
+    .quiz-q-header { margin-bottom:16px; }
+    .quiz-q-num { display:inline-block; background:var(--acq-primary, #0f5bcf); color:#fff; font-size:.75rem; font-weight:700; padding:3px 10px; border-radius:20px; margin-bottom:8px; }
+    .quiz-q-header h2 { font-size:1.1rem; margin:0; }
+    .quiz-result-box { text-align:center; padding:24px; background:linear-gradient(135deg, #0f5bcf 0%, #1a6de0 100%); border-radius:12px; color:#fff; margin-bottom:20px; }
+    .quiz-result-badge { display:inline-block; background:rgba(255,255,255,.2); padding:6px 20px; border-radius:24px; font-size:1.5rem; font-weight:800; letter-spacing:1px; }
+    .quiz-result-details { background:#f9fafb; border-radius:10px; padding:16px; }
+    .quiz-reasons-list { list-style:none; padding:0; margin:0; }
+    .quiz-reasons-list li { padding:8px 0; border-bottom:1px solid #e5e7eb; font-size:.9rem; }
+    .quiz-reasons-list li:last-child { border-bottom:none; }
+    .quiz-reasons-list li::before { content:"✓ "; color:var(--acq-success, #0f7e45); font-weight:700; }
+    .quiz-alt-card { padding:10px 14px; border:1px solid #e5e7eb; border-radius:8px; margin-bottom:8px; }
+    .quiz-alt-card strong { font-size:.95rem; }
+    .quiz-alt-card p { font-size:.82rem; color:#666; margin:4px 0 0; }
+    @media (max-width:600px) { .sim-grid { grid-template-columns: 1fr 1fr; } }
+  </style>
+
+  <script>
+    (function() {
+      const answers = {};
+      let currentQ = 1;
+      const totalQ = 6;
+
+      function $(id) { return document.getElementById(id); }
+
+      function showQ(n) {
+        for (let i = 1; i <= totalQ; i++) {
+          var el = $("q-" + i);
+          if (el) el.classList.toggle("acq-hidden", i !== n);
+        }
+        $("quiz-gate").classList.add("acq-hidden");
+        $("quiz-result").classList.add("acq-hidden");
+        $("quiz-progress").style.display = "flex";
+        $("quiz-progress-fill").style.width = ((n - 1) / totalQ * 100) + "%";
+        $("quiz-progress-text").textContent = "Question " + n + "/" + totalQ;
+        currentQ = n;
+      }
+
+      function showGate() {
+        for (let i = 1; i <= totalQ; i++) {
+          var el = $("q-" + i);
+          if (el) el.classList.add("acq-hidden");
+        }
+        $("quiz-progress").style.display = "none";
+        $("quiz-gate").classList.remove("acq-hidden");
+      }
+
+      function showResult() {
+        $("quiz-gate").classList.add("acq-hidden");
+        $("quiz-result").classList.remove("acq-hidden");
+        calculateResult();
+      }
+
+      function calculateResult() {
+        // Scoring system
+        var scores = { micro: 0, sasu: 0, eurl: 0, sarl: 0, sas: 0, sci: 0 };
+
+        // Q1: Nombre d'associés
+        if (answers.q1 === "solo") { scores.micro += 3; scores.sasu += 4; scores.eurl += 3; }
+        if (answers.q1 === "duo") { scores.sarl += 4; scores.sas += 3; scores.sci += 2; }
+        if (answers.q1 === "multi") { scores.sas += 5; scores.sarl += 3; scores.sci += 2; }
+
+        // Q2: Type d'activité
+        if (answers.q2 === "service") { scores.micro += 2; scores.sasu += 3; scores.eurl += 2; }
+        if (answers.q2 === "commerce") { scores.sarl += 2; scores.sas += 2; scores.sasu += 2; }
+        if (answers.q2 === "artisan") { scores.micro += 3; scores.eurl += 2; scores.sarl += 2; }
+        if (answers.q2 === "immo") { scores.sci += 6; scores.sarl += 1; }
+        if (answers.q2 === "liberal") { scores.micro += 2; scores.sasu += 3; scores.eurl += 2; }
+        if (answers.q2 === "tech") { scores.sas += 5; scores.sasu += 4; }
+
+        // Q3: CA prévu
+        if (answers.q3 === "petit") { scores.micro += 5; scores.sasu += 1; }
+        if (answers.q3 === "moyen") { scores.micro += 2; scores.sasu += 3; scores.eurl += 3; }
+        if (answers.q3 === "grand") { scores.sasu += 4; scores.sas += 3; scores.sarl += 3; scores.micro -= 2; }
+        if (answers.q3 === "tres_grand") { scores.sas += 5; scores.sasu += 3; scores.sarl += 2; scores.micro -= 5; }
+
+        // Q4: Protection patrimoine
+        if (answers.q4 === "prioritaire") { scores.sasu += 3; scores.sas += 3; scores.sarl += 2; scores.eurl += 2; scores.micro -= 1; }
+        if (answers.q4 === "pas_prioritaire") { scores.micro += 2; }
+
+        // Q5: Rémunération
+        if (answers.q5 === "salaire") { scores.sasu += 2; scores.sas += 2; }
+        if (answers.q5 === "dividendes") { scores.sasu += 4; scores.sas += 3; }
+        if (answers.q5 === "mixte") { scores.sasu += 3; scores.sas += 3; scores.sarl += 2; }
+
+        // Q6: Budget
+        if (answers.q6 === "minimal") { scores.micro += 4; scores.sasu += 1; }
+        if (answers.q6 === "modere") { scores.sasu += 3; scores.eurl += 2; scores.sarl += 2; }
+        if (answers.q6 === "confortable") { scores.sas += 2; scores.sasu += 2; }
+
+        // Trouver le gagnant
+        var sorted = Object.entries(scores).sort(function(a, b) { return b[1] - a[1]; });
+        var winner = sorted[0][0];
+        var alt1 = sorted[1][0];
+        var alt2 = sorted[2][0];
+
+        var DATA = {
+          micro: {
+            label: "Auto-entrepreneur",
+            title: "L'auto-entreprise est le statut idéal pour vous",
+            desc: "Simple, gratuit à créer et parfait pour démarrer. Charges sociales proportionnelles à votre CA, comptabilité simplifiée.",
+            reasons: [
+              "Création gratuite et immédiate",
+              "Charges sociales simples (~22% du CA en services)",
+              "Comptabilité ultra-simplifiée",
+              "Idéal pour tester une activité ou compléter ses revenus",
+            ],
+          },
+          sasu: {
+            label: "SASU",
+            title: "La SASU est le statut idéal pour vous",
+            desc: "Structure flexible avec responsabilité limitée. Idéale pour se rémunérer en dividendes (flat tax 30%) et protéger son patrimoine.",
+            reasons: [
+              "Responsabilité limitée aux apports",
+              "Optimisation fiscale via les dividendes (flat tax 30%)",
+              "Président assimilé salarié (protection sociale)",
+              "Grande flexibilité dans les statuts",
+            ],
+          },
+          eurl: {
+            label: "EURL",
+            title: "L'EURL est le statut idéal pour vous",
+            desc: "Version unipersonnelle de la SARL. Cadre juridique sécurisant avec un gérant TNS (charges moins élevées mais couverture sociale différente).",
+            reasons: [
+              "Cadre juridique bien encadré",
+              "Gérant TNS : charges sociales modérées (~45%)",
+              "Possibilité d'opter pour l'IS ou l'IR",
+              "Peut évoluer en SARL sans transformer la société",
+            ],
+          },
+          sarl: {
+            label: "SARL",
+            title: "La SARL est le statut idéal pour vous",
+            desc: "Forme juridique la plus connue en France. Cadre rassurant, idéale pour les projets à plusieurs avec une gestion encadrée.",
+            reasons: [
+              "Cadre juridique très encadré et sécurisant",
+              "Idéale pour les projets familiaux ou à 2-3 associés",
+              "Gérant majoritaire TNS (charges modérées)",
+              "Responsabilité limitée aux apports",
+            ],
+          },
+          sas: {
+            label: "SAS",
+            title: "La SAS est le statut idéal pour vous",
+            desc: "Structure préférée des startups et projets ambitieux. Grande liberté dans l'organisation, idéale pour accueillir des investisseurs.",
+            reasons: [
+              "Maximum de flexibilité statutaire",
+              "Idéale pour accueillir des investisseurs",
+              "Dirigeant assimilé salarié",
+              "Parfaite pour les projets à forte croissance",
+            ],
+          },
+          sci: {
+            label: "SCI",
+            title: "La SCI est le statut idéal pour vous",
+            desc: "Société Civile Immobilière, parfaite pour gérer un patrimoine immobilier à plusieurs. Transmission facilitée et gestion souple.",
+            reasons: [
+              "Gestion de patrimoine immobilier optimisée",
+              "Transmission facilitée (donation de parts)",
+              "Répartition souple entre associés",
+              "Choix IS ou IR selon la stratégie fiscale",
+            ],
+          },
+        };
+
+        var w = DATA[winner] || DATA.sasu;
+        var a1 = DATA[alt1] || DATA.sarl;
+        var a2 = DATA[alt2] || DATA.eurl;
+
+        $("result-badge").textContent = w.label;
+        $("result-title").textContent = w.title;
+        $("result-desc").textContent = w.desc;
+        $("result-form-cta").textContent = w.label;
+
+        var reasonsHtml = "";
+        w.reasons.forEach(function(r) { reasonsHtml += "<li>" + r + "</li>"; });
+        $("result-reasons").innerHTML = reasonsHtml;
+
+        $("result-alternatives").innerHTML =
+          '<div class="quiz-alt-card"><strong>' + a1.label + '</strong><p>' + a1.desc.substring(0, 120) + '...</p></div>' +
+          '<div class="quiz-alt-card"><strong>' + a2.label + '</strong><p>' + a2.desc.substring(0, 120) + '...</p></div>';
+      }
+
+      // Click handler
+      document.addEventListener("click", function(e) {
+        var btn = e.target.closest(".sim-option");
+        if (!btn) return;
+        var step = btn.closest(".quiz-step");
+        if (!step) return;
+
+        step.querySelectorAll(".sim-option").forEach(function(o) { o.classList.remove("selected"); });
+        btn.classList.add("selected");
+
+        var val = btn.dataset.value;
+        var qNum = parseInt(step.id.replace("q-", ""), 10);
+        answers["q" + qNum] = val;
+
+        if (qNum < totalQ) {
+          setTimeout(function() { showQ(qNum + 1); }, 300);
+        } else {
+          setTimeout(function() { showGate(); }, 300);
+        }
+      });
+
+      // Email gate
+      $("quiz-email-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        var email = $("quiz-email").value.trim();
+        if (!email) return;
+
+        var payload = {
+          type: "quiz_statut",
+          email: email,
+          data: answers,
+          source: {
+            page: window.location.pathname,
+            referrer: document.referrer || "",
+          }
+        };
+
+        fetch("/api/tools/capture", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(payload),
+        }).catch(function() {});
+
+        showResult();
+      });
+
+      // Restart
+      $("quiz-restart").addEventListener("click", function() {
+        for (var k in answers) delete answers[k];
+        document.querySelectorAll(".sim-option.selected").forEach(function(o) { o.classList.remove("selected"); });
+        $("quiz-email").value = "";
+        showQ(1);
+      });
+    })();
+  </script>
+</body>
+</html>

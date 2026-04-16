@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simulateur de coûts de création de société | Gratuit | Keybis</title>
+  <meta name="description" content="Estimez gratuitement le coût de création de votre société : SASU, SAS, SARL, EURL, SCI, auto-entrepreneur. Frais de greffe, annonces légales, honoraires." />
+  <meta name="keywords" content="simulateur coût création société, combien coûte créer une sasu, frais création sarl, coût création entreprise, simulateur gratuit" />
+  {{include:../partials/seo-meta.html}}
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/assets/css/acquisition.css" />
+  <script type="module" src="/assets/js/acquisition.js" defer></script>
+</head>
+<body class="acq-body" data-page-type="simulateur_couts">
+  {{include:../partials/marketing-header.html}}
+
+  <main class="acq-main" id="main-content">
+    <div class="acq-container">
+      <section class="acq-hero acq-hero-premium acq-hero-single">
+        <article class="acq-card acq-hero-main" style="max-width: 720px; margin: 0 auto;">
+          <span class="acq-kicker">Outil gratuit</span>
+          <h1>Simulateur de coûts de création de société</h1>
+          <p class="acq-muted">Estimez en 30 secondes le budget total pour créer votre entreprise : frais administratifs, annonces légales, accompagnement. Résultat personnalisé et gratuit.</p>
+        </article>
+      </section>
+
+      <section class="acq-section-shell" style="max-width: 780px; margin: 0 auto;">
+        <div class="acq-card" id="simulator-card">
+
+          <!-- Étape 1 : Forme juridique -->
+          <div id="sim-step-1" class="sim-step">
+            <h2 style="font-size:1.15rem; margin-bottom:6px;">Quelle forme juridique souhaitez-vous ?</h2>
+            <p class="acq-muted" style="margin-bottom:18px; font-size:.9rem;">Sélectionnez la structure qui correspond à votre projet.</p>
+            <div class="sim-grid" id="legal-form-grid">
+              <button class="sim-option" data-value="sasu" type="button">
+                <strong>SASU</strong>
+                <span>1 associé, président</span>
+              </button>
+              <button class="sim-option" data-value="sas" type="button">
+                <strong>SAS</strong>
+                <span>2+ associés, flexible</span>
+              </button>
+              <button class="sim-option" data-value="sarl" type="button">
+                <strong>SARL</strong>
+                <span>2-100 associés, gérant</span>
+              </button>
+              <button class="sim-option" data-value="eurl" type="button">
+                <strong>EURL</strong>
+                <span>1 associé, gérant</span>
+              </button>
+              <button class="sim-option" data-value="sci" type="button">
+                <strong>SCI</strong>
+                <span>Immobilier, 2+ associés</span>
+              </button>
+              <button class="sim-option" data-value="sa" type="button">
+                <strong>SA</strong>
+                <span>7+ actionnaires, gros projets</span>
+              </button>
+              <button class="sim-option" data-value="snc" type="button">
+                <strong>SNC</strong>
+                <span>2+ associés, solidarité</span>
+              </button>
+              <button class="sim-option" data-value="micro" type="button">
+                <strong>Auto-entrepreneur</strong>
+                <span>Solo, simplifié</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Étape 2 : Capital social -->
+          <div id="sim-step-2" class="sim-step acq-hidden">
+            <h2 style="font-size:1.15rem; margin-bottom:6px;">Quel capital social prévoyez-vous ?</h2>
+            <p class="acq-muted" style="margin-bottom:18px; font-size:.9rem;">Le capital social influence les frais d'enregistrement.</p>
+            <div class="sim-grid">
+              <button class="sim-option" data-value="1" type="button">
+                <strong>1 €</strong>
+                <span>Capital symbolique</span>
+              </button>
+              <button class="sim-option" data-value="1000" type="button">
+                <strong>1 000 €</strong>
+                <span>Recommandé</span>
+              </button>
+              <button class="sim-option" data-value="5000" type="button">
+                <strong>5 000 €</strong>
+                <span>Crédibilité renforcée</span>
+              </button>
+              <button class="sim-option" data-value="10000" type="button">
+                <strong>10 000 €+</strong>
+                <span>Gros projets</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Étape 3 : Domiciliation -->
+          <div id="sim-step-3" class="sim-step acq-hidden">
+            <h2 style="font-size:1.15rem; margin-bottom:6px;">Où sera domiciliée votre société ?</h2>
+            <p class="acq-muted" style="margin-bottom:18px; font-size:.9rem;">L'adresse du siège social impacte les frais récurrents.</p>
+            <div class="sim-grid">
+              <button class="sim-option" data-value="domicile" type="button">
+                <strong>Chez moi</strong>
+                <span>Gratuit, pratique</span>
+              </button>
+              <button class="sim-option" data-value="domiciliation" type="button">
+                <strong>Société de domiciliation</strong>
+                <span>~15-30 €/mois</span>
+              </button>
+              <button class="sim-option" data-value="local" type="button">
+                <strong>Local commercial</strong>
+                <span>Variable selon la ville</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Étape 4 : Accompagnement -->
+          <div id="sim-step-4" class="sim-step acq-hidden">
+            <h2 style="font-size:1.15rem; margin-bottom:6px;">Quel niveau d'accompagnement ?</h2>
+            <p class="acq-muted" style="margin-bottom:18px; font-size:.9rem;">Choisissez le niveau de support souhaité.</p>
+            <div class="sim-grid">
+              <button class="sim-option" data-value="seul" type="button">
+                <strong>Je fais tout seul</strong>
+                <span>0 € d'honoraires</span>
+              </button>
+              <button class="sim-option" data-value="plateforme" type="button">
+                <strong>Plateforme en ligne</strong>
+                <span>~89-189 €</span>
+              </button>
+              <button class="sim-option" data-value="expert" type="button">
+                <strong>Expert-comptable</strong>
+                <span>~500-1500 €</span>
+              </button>
+              <button class="sim-option" data-value="avocat" type="button">
+                <strong>Avocat</strong>
+                <span>~1000-3000 €</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Barre de progression -->
+          <div class="sim-progress" id="sim-progress">
+            <div class="sim-progress-bar">
+              <div class="sim-progress-fill" id="sim-progress-fill" style="width: 0%"></div>
+            </div>
+            <span class="sim-progress-text" id="sim-progress-text">Étape 1/4</span>
+          </div>
+
+          <!-- Résultat -->
+          <div id="sim-result" class="sim-step acq-hidden">
+            <h2 style="font-size:1.25rem; margin-bottom:18px; text-align:center;">Estimation du coût de création</h2>
+
+            <div class="sim-result-header">
+              <span class="sim-result-form" id="result-form-label">SASU</span>
+              <span class="sim-result-total" id="result-total">~320 €</span>
+            </div>
+
+            <div class="sim-breakdown">
+              <div class="sim-breakdown-row">
+                <span>Frais de greffe (immatriculation)</span>
+                <span id="cost-greffe">37,45 €</span>
+              </div>
+              <div class="sim-breakdown-row">
+                <span>Annonce légale (JAL)</span>
+                <span id="cost-jal">138 €</span>
+              </div>
+              <div class="sim-breakdown-row">
+                <span>Déclaration des bénéficiaires effectifs</span>
+                <span id="cost-rbe">21,41 €</span>
+              </div>
+              <div class="sim-breakdown-row" id="row-domiciliation" style="display:none;">
+                <span>Domiciliation (1re année)</span>
+                <span id="cost-domiciliation">0 €</span>
+              </div>
+              <div class="sim-breakdown-row">
+                <span>Accompagnement / Honoraires</span>
+                <span id="cost-accompagnement">0 €</span>
+              </div>
+              <div class="sim-breakdown-row sim-breakdown-total">
+                <strong>Total estimé</strong>
+                <strong id="cost-total-detail">~197 €</strong>
+              </div>
+            </div>
+
+            <p class="acq-muted" style="font-size:.85rem; text-align:center; margin:16px 0 0;">Estimation indicative — les montants réels peuvent varier selon votre situation.</p>
+
+            <!-- CTA capture email -->
+            <div class="sim-cta-box" id="sim-cta-box">
+              <h3 style="font-size:1.05rem; margin-bottom:6px;">Recevez votre estimation détaillée + guide personnalisé</h3>
+              <p class="acq-muted" style="font-size:.85rem; margin-bottom:14px;">On vous envoie un récapitulatif complet avec les étapes de création adaptées à votre projet.</p>
+              <form id="sim-email-form" class="acq-form" style="display:flex; gap:10px; flex-wrap:wrap;">
+                <input type="email" id="sim-email" placeholder="Votre email" required style="flex:1; min-width:200px;" class="acq-field" />
+                <button type="submit" class="acq-btn acq-btn-primary">Recevoir mon estimation</button>
+              </form>
+              <p class="sim-success acq-hidden" id="sim-email-success" style="color: var(--acq-success); font-weight:600; text-align:center; margin-top:12px;">Merci ! Votre estimation a été envoyée.</p>
+            </div>
+
+            <!-- CTA Keybis -->
+            <div style="text-align:center; margin-top:20px; padding-top:20px; border-top: 1px solid #e5e7eb;">
+              <p style="margin-bottom:12px; font-size:.95rem;">Besoin d'aide pour lancer votre projet ?</p>
+              <a class="acq-btn acq-btn-primary" href="/demande?service=creation" data-cta="simulateur_cta_demande">Parler à un expert Keybis</a>
+              <p class="acq-muted" style="font-size:.8rem; margin-top:8px;">Dès 89 € · Réponse en 10 min · Sans engagement</p>
+            </div>
+
+            <button type="button" class="acq-btn acq-btn-ghost" id="sim-restart" style="margin-top:16px; width:100%;">Refaire une simulation</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section SEO FAQ -->
+      <section class="acq-section-shell" style="max-width: 780px; margin: 0 auto;">
+        <div class="acq-section-head acq-section-head--centered">
+          <h2>Questions fréquentes sur les coûts de création</h2>
+        </div>
+        <div class="acq-faq-list">
+          <details class="acq-faq-item">
+            <summary>Combien coûte la création d'une SASU en 2026 ?</summary>
+            <div class="acq-faq-answer">
+              <p>La création d'une SASU coûte environ 200 à 400 € en frais administratifs incompressibles : frais de greffe (~37 €), annonce légale (~138 €), déclaration des bénéficiaires effectifs (~21 €). Si vous faites appel à un accompagnement, ajoutez entre 89 € (plateforme en ligne) et 1500 € (expert-comptable).</p>
+            </div>
+          </details>
+          <details class="acq-faq-item">
+            <summary>Quels sont les frais obligatoires pour créer une société ?</summary>
+            <div class="acq-faq-answer">
+              <p>Les frais obligatoires comprennent l'immatriculation au greffe, la publication d'une annonce légale dans un journal habilité, et la déclaration des bénéficiaires effectifs. Pour une auto-entreprise, l'inscription est gratuite.</p>
+            </div>
+          </details>
+          <details class="acq-faq-item">
+            <summary>Est-ce qu'on peut créer une société avec 1 € de capital ?</summary>
+            <div class="acq-faq-answer">
+              <p>Oui, il est possible de créer une SASU, SAS, SARL ou EURL avec un capital social de 1 €. Cependant, un capital plus élevé (1 000 € minimum) est recommandé pour rassurer les banques et partenaires.</p>
+            </div>
+          </details>
+          <details class="acq-faq-item">
+            <summary>Auto-entrepreneur vs SASU : quelle différence de coût ?</summary>
+            <div class="acq-faq-answer">
+              <p>La création d'une auto-entreprise est gratuite (sauf activité artisanale : ~130 € de stage). La SASU coûte environ 200-400 € en frais de création. En revanche, la SASU offre plus de flexibilité fiscale et une meilleure protection du patrimoine.</p>
+            </div>
+          </details>
+          <details class="acq-faq-item">
+            <summary>Faut-il un comptable pour créer sa société ?</summary>
+            <div class="acq-faq-answer">
+              <p>Non, un comptable n'est pas obligatoire pour la création. Cependant, il est fortement recommandé d'en avoir un dès le départ pour optimiser votre fiscalité. Un expert-comptable coûte entre 80 et 250 €/mois selon l'activité.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- CTA final -->
+      <section class="acq-section-shell" style="max-width: 780px; margin: 0 auto;">
+        <div class="acq-card" style="text-align:center; padding:32px 24px; background:linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 100%);">
+          <h2 style="font-size:1.3rem; margin-bottom:10px;">Prêt à créer votre société ?</h2>
+          <p class="acq-muted" style="margin-bottom:18px;">Un expert Keybis analyse votre projet et vous répond en moins de 10 minutes.</p>
+          <a class="acq-btn acq-btn-primary" href="/demande?service=creation" data-cta="simulateur_bottom_cta">Démarrer ma création</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  {{include:../partials/marketing-footer.html}}
+
+  <style>
+    .sim-step { animation: simFadeIn .3s ease; }
+    @keyframes simFadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+    .sim-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap:10px; margin-bottom:16px; }
+    .sim-option { background:#fff; border:2px solid #e5e7eb; border-radius:10px; padding:14px 12px; text-align:center; cursor:pointer; transition:all .2s; display:flex; flex-direction:column; gap:2px; }
+    .sim-option:hover { border-color: var(--acq-primary, #0f5bcf); background:#f0f5ff; }
+    .sim-option.selected { border-color: var(--acq-primary, #0f5bcf); background:#e8f0fe; box-shadow: 0 0 0 3px rgba(15,91,207,.15); }
+    .sim-option strong { font-size:1rem; color:#1a1a2e; }
+    .sim-option span { font-size:.78rem; color:#666; }
+    .sim-progress { margin-top:20px; padding-top:16px; border-top:1px solid #e5e7eb; display:flex; align-items:center; gap:12px; }
+    .sim-progress-bar { flex:1; height:6px; background:#e5e7eb; border-radius:3px; overflow:hidden; }
+    .sim-progress-fill { height:100%; background:var(--acq-primary, #0f5bcf); border-radius:3px; transition:width .4s ease; }
+    .sim-progress-text { font-size:.8rem; color:#666; white-space:nowrap; }
+    .sim-result-header { text-align:center; margin-bottom:20px; padding:20px; background:linear-gradient(135deg, #0f5bcf 0%, #1a6de0 100%); border-radius:12px; color:#fff; }
+    .sim-result-form { display:block; font-size:.85rem; opacity:.85; margin-bottom:4px; }
+    .sim-result-total { display:block; font-size:2.2rem; font-weight:800; }
+    .sim-breakdown { background:#f9fafb; border-radius:10px; padding:16px; }
+    .sim-breakdown-row { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid #e5e7eb; font-size:.9rem; }
+    .sim-breakdown-row:last-child { border-bottom:none; }
+    .sim-breakdown-total { font-size:1rem; padding-top:12px; margin-top:4px; border-top:2px solid #0f5bcf; border-bottom:none; }
+    .sim-cta-box { margin-top:24px; padding:20px; background:#f0f5ff; border-radius:12px; border:1px solid #d0e0ff; }
+    @media (max-width:600px) { .sim-grid { grid-template-columns: 1fr 1fr; } .sim-result-total { font-size:1.8rem; } }
+  </style>
+
+  <script>
+    (function() {
+      const COSTS = {
+        sasu:  { greffe: 37.45, jal: 138, rbe: 21.41, label: "SASU" },
+        sas:   { greffe: 37.45, jal: 138, rbe: 21.41, label: "SAS" },
+        sarl:  { greffe: 37.45, jal: 124, rbe: 21.41, label: "SARL" },
+        eurl:  { greffe: 37.45, jal: 124, rbe: 21.41, label: "EURL" },
+        sci:   { greffe: 37.45, jal: 150, rbe: 21.41, label: "SCI" },
+        sa:    { greffe: 37.45, jal: 230, rbe: 21.41, label: "SA" },
+        snc:   { greffe: 37.45, jal: 124, rbe: 21.41, label: "SNC" },
+        micro: { greffe: 0, jal: 0, rbe: 0, label: "Auto-entrepreneur" },
+      };
+
+      const ACCOMP = {
+        seul: { min: 0, max: 0 },
+        plateforme: { min: 89, max: 189 },
+        expert: { min: 500, max: 1500 },
+        avocat: { min: 1000, max: 3000 },
+      };
+
+      const DOMIC = {
+        domicile: { annual: 0 },
+        domiciliation: { annual: 240 },
+        local: { annual: 0 },
+      };
+
+      const state = { form: null, capital: null, domiciliation: null, accompagnement: null };
+      let currentStep = 1;
+
+      function $(id) { return document.getElementById(id); }
+
+      function showStep(n) {
+        for (let i = 1; i <= 4; i++) {
+          const el = $("sim-step-" + i);
+          if (el) el.classList.toggle("acq-hidden", i !== n);
+        }
+        $("sim-result").classList.add("acq-hidden");
+        $("sim-progress").style.display = "flex";
+        $("sim-progress-fill").style.width = ((n - 1) / 4 * 100) + "%";
+        $("sim-progress-text").textContent = "Étape " + n + "/4";
+        currentStep = n;
+      }
+
+      function showResult() {
+        for (let i = 1; i <= 4; i++) {
+          const el = $("sim-step-" + i);
+          if (el) el.classList.add("acq-hidden");
+        }
+        $("sim-progress").style.display = "none";
+        $("sim-result").classList.remove("acq-hidden");
+        calculate();
+      }
+
+      function calculate() {
+        const c = COSTS[state.form] || COSTS.sasu;
+        const a = ACCOMP[state.accompagnement] || ACCOMP.seul;
+        const d = DOMIC[state.domiciliation] || DOMIC.domicile;
+
+        const greffe = c.greffe;
+        const jal = c.jal;
+        const rbe = c.rbe;
+        const domicAnnual = d.annual;
+        const accompMin = a.min;
+        const accompMax = a.max;
+
+        const totalMin = greffe + jal + rbe + domicAnnual + accompMin;
+        const totalMax = greffe + jal + rbe + domicAnnual + accompMax;
+
+        $("result-form-label").textContent = c.label + (state.capital ? " — Capital " + Number(state.capital).toLocaleString("fr-FR") + " €" : "");
+
+        if (state.form === "micro") {
+          $("result-total").textContent = "Gratuit";
+          $("cost-greffe").textContent = "0 €";
+          $("cost-jal").textContent = "0 €";
+          $("cost-rbe").textContent = "0 €";
+        } else {
+          $("cost-greffe").textContent = greffe.toFixed(2).replace(".", ",") + " €";
+          $("cost-jal").textContent = jal + " €";
+          $("cost-rbe").textContent = rbe.toFixed(2).replace(".", ",") + " €";
+        }
+
+        if (domicAnnual > 0) {
+          $("row-domiciliation").style.display = "flex";
+          $("cost-domiciliation").textContent = "~" + domicAnnual + " €/an";
+        } else {
+          $("row-domiciliation").style.display = "none";
+        }
+
+        if (accompMin === accompMax) {
+          $("cost-accompagnement").textContent = accompMin + " €";
+        } else {
+          $("cost-accompagnement").textContent = accompMin + "-" + accompMax + " €";
+        }
+
+        if (totalMin === totalMax) {
+          $("result-total").textContent = "~" + Math.round(totalMin) + " €";
+          $("cost-total-detail").textContent = "~" + Math.round(totalMin) + " €";
+        } else {
+          $("result-total").textContent = "~" + Math.round(totalMin) + " - " + Math.round(totalMax) + " €";
+          $("cost-total-detail").textContent = "~" + Math.round(totalMin) + " - " + Math.round(totalMax) + " €";
+        }
+
+        if (state.form === "micro") {
+          $("result-total").textContent = "Gratuit";
+          $("cost-total-detail").textContent = "0 €";
+        }
+      }
+
+      // Event delegation pour les options
+      document.addEventListener("click", function(e) {
+        const btn = e.target.closest(".sim-option");
+        if (!btn) return;
+
+        const step = btn.closest(".sim-step");
+        if (!step) return;
+
+        // Deselect siblings
+        step.querySelectorAll(".sim-option").forEach(function(o) { o.classList.remove("selected"); });
+        btn.classList.add("selected");
+
+        const val = btn.dataset.value;
+
+        if (step.id === "sim-step-1") {
+          state.form = val;
+          if (val === "micro") {
+            // Auto-entrepreneur: skip capital, go directly to domiciliation
+            state.capital = "0";
+            setTimeout(function() { showStep(3); }, 300);
+          } else {
+            setTimeout(function() { showStep(2); }, 300);
+          }
+        } else if (step.id === "sim-step-2") {
+          state.capital = val;
+          setTimeout(function() { showStep(3); }, 300);
+        } else if (step.id === "sim-step-3") {
+          state.domiciliation = val;
+          setTimeout(function() { showStep(4); }, 300);
+        } else if (step.id === "sim-step-4") {
+          state.accompagnement = val;
+          setTimeout(function() { showResult(); }, 300);
+        }
+      });
+
+      // Restart
+      $("sim-restart").addEventListener("click", function() {
+        state.form = null; state.capital = null; state.domiciliation = null; state.accompagnement = null;
+        document.querySelectorAll(".sim-option.selected").forEach(function(o) { o.classList.remove("selected"); });
+        $("sim-email-form").style.display = "flex";
+        $("sim-email-success").classList.add("acq-hidden");
+        $("sim-email").value = "";
+        showStep(1);
+      });
+
+      // Email capture
+      $("sim-email-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const email = $("sim-email").value.trim();
+        if (!email) return;
+
+        const payload = {
+          type: "simulateur",
+          email: email,
+          data: {
+            forme: state.form,
+            capital: state.capital,
+            domiciliation: state.domiciliation,
+            accompagnement: state.accompagnement,
+          },
+          source: {
+            page: window.location.pathname,
+            referrer: document.referrer || "",
+          }
+        };
+
+        fetch("/api/tools/capture", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(payload),
+        }).catch(function() {});
+
+        $("sim-email-form").style.display = "none";
+        $("sim-email-success").classList.remove("acq-hidden");
+      });
+    })();
+  </script>
+</body>
+</html>

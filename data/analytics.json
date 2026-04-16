@@ -1249,5 +1249,18 @@
         "lastCampaign": {}
       }
     }
+  },
+  {
+    "id": "trk_1776371331067_ibhqs1",
+    "ts": "2026-04-16T20:28:51.067Z",
+    "event": "tool_lead_captured",
+    "page": "/simulateur-couts",
+    "source": "direct",
+    "userId": null,
+    "payload": {
+      "captureId": "cap_1776371331013_71raov",
+      "type": "simulateur",
+      "email": "test@test.com"
+    }
   }
 ]

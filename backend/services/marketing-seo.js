@@ -251,6 +251,43 @@ const SEO_MAP = {
       maxPrice: 399,
     },
   },
+  "/simulateur-couts": {
+    title: "Simulateur de coûts de création de société | Gratuit | Keybis",
+    description: "Estimez gratuitement le coût de création de votre société : SASU, SAS, SARL, EURL, SCI, auto-entrepreneur. Frais de greffe, annonces légales, honoraires.",
+    breadcrumb: [
+      { name: "Accueil", path: "/" },
+      { name: "Simulateur de coûts", path: "/simulateur-couts" },
+    ],
+    faq: [
+      { q: "Combien coûte la création d'une SASU en 2026 ?", a: "La création d'une SASU coûte environ 200 à 400 € en frais administratifs : frais de greffe (~37 €), annonce légale (~138 €), déclaration des bénéficiaires effectifs (~21 €). Ajoutez 89 à 1500 € selon l'accompagnement choisi." },
+      { q: "Quels sont les frais obligatoires pour créer une société ?", a: "Les frais obligatoires comprennent l'immatriculation au greffe, la publication d'une annonce légale et la déclaration des bénéficiaires effectifs. Pour une auto-entreprise, l'inscription est gratuite." },
+      { q: "Est-ce qu'on peut créer une société avec 1 € de capital ?", a: "Oui, il est possible de créer une SASU, SAS, SARL ou EURL avec un capital social de 1 €. Un capital plus élevé (1 000 € minimum) est recommandé pour rassurer les banques et partenaires." },
+    ],
+  },
+  "/quiz-statut-juridique": {
+    title: "Quiz : Quel statut juridique choisir ? | Gratuit | Keybis",
+    description: "Trouvez le statut juridique idéal pour votre projet en 2 minutes : SASU, SARL, auto-entrepreneur, SCI. Quiz gratuit et personnalisé.",
+    breadcrumb: [
+      { name: "Accueil", path: "/" },
+      { name: "Quiz statut juridique", path: "/quiz-statut-juridique" },
+    ],
+    faq: [
+      { q: "SASU ou SARL : quelle différence ?", a: "La SASU offre plus de flexibilité (président assimilé salarié, dividendes non soumis aux charges sociales) tandis que la SARL a un cadre plus encadré (gérant TNS, charges sociales sur dividendes au-delà de 10% du capital)." },
+      { q: "Quel statut pour payer le moins de charges ?", a: "L'auto-entrepreneur paie des charges simplifiées (~22% du CA en services). Pour les sociétés, la SASU permet d'optimiser via les dividendes (flat tax 30%)." },
+    ],
+  },
+  "/documents-gratuits": {
+    title: "Modèles de statuts gratuits | SASU, SARL, SCI | Keybis",
+    description: "Téléchargez gratuitement des modèles de statuts de société : SASU, SARL, SCI. Documents conformes 2026, prêts à compléter.",
+    breadcrumb: [
+      { name: "Accueil", path: "/" },
+      { name: "Documents gratuits", path: "/documents-gratuits" },
+    ],
+    faq: [
+      { q: "Les modèles sont-ils vraiment gratuits ?", a: "Oui, les modèles sont 100% gratuits. Nous les envoyons par email en échange de votre adresse pour pouvoir vous envoyer des conseils personnalisés." },
+      { q: "Ces modèles sont-ils conformes au droit français ?", a: "Nos modèles sont mis à jour régulièrement pour être conformes à la législation en vigueur. Nous recommandons de faire vérifier vos statuts par un professionnel avant le dépôt au greffe." },
+    ],
+  },
   "/mentions-legales": {
     title: "Mentions légales | Keybis LegalTech",
     description: "Mentions légales de Keybis: éditeur, contact, hébergement et informations de conformité.",

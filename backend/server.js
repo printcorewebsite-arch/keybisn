@@ -9,6 +9,7 @@ import { handleFileRoutes } from "./routes/api-files.js";
 import { handleLeadRoutes } from "./routes/api-leads.js";
 import { handleOnboardingRoutes } from "./routes/api-onboarding.js";
 import { handlePaymentRoutes } from "./routes/api-payments.js";
+import { handleToolRoutes } from "./routes/api-tools.js";
 import { getUserFromSession } from "./services/auth-service.js";
 import { ensureDataStore } from "./services/data-store.js";
 import { marketingSeoContext } from "./services/marketing-seo.js";
@@ -50,6 +51,9 @@ const PAGE_ROUTES = {
   "/guide-changement-denomination": "guide-changement-denomination.html",
   "/guide-fermeture-micro-entreprise": "guide-fermeture-micro-entreprise.html",
   "/guide-cessation-activite": "guide-cessation-activite.html",
+  "/simulateur-couts": "simulateur-couts.html",
+  "/quiz-statut-juridique": "quiz-statut-juridique.html",
+  "/documents-gratuits": "documents-gratuits.html",
 };
 
 const PROTECTED_PAGES = new Set(["/onboarding", "/dashboard", "/checkout", "/checkout/success"]);
@@ -74,6 +78,9 @@ const PUBLIC_PAGES_FOR_SITEMAP = [
   { path: "/comment-ca-marche", priority: 0.7, changefreq: "monthly" },
   { path: "/documents-juridiques", priority: 0.7, changefreq: "monthly" },
   { path: "/formalites-juridiques", priority: 0.7, changefreq: "monthly" },
+  { path: "/simulateur-couts", priority: 0.9, changefreq: "monthly" },
+  { path: "/quiz-statut-juridique", priority: 0.9, changefreq: "monthly" },
+  { path: "/documents-gratuits", priority: 0.8, changefreq: "monthly" },
   { path: "/mentions-legales", priority: 0.3, changefreq: "yearly" },
   { path: "/cgv", priority: 0.3, changefreq: "yearly" },
   { path: "/confidentialite", priority: 0.3, changefreq: "yearly" },
@@ -245,6 +252,7 @@ Sitemap: ${SITE_URL}/sitemap.xml`;
         handlePaymentRoutes,
         handleFileRoutes,
         handleAnalyticsRoutes,
+        handleToolRoutes,
       ];
 
       for (const handler of apiHandlers) {
